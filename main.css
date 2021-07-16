@@ -10,8 +10,7 @@ body {
     color: #111;
     font-size: 15px;
     line-height: 1.5;
-    margin: 0 auto;
-    /* overflow-x: hidden */
+    overflow-x: hidden
 }
 a {
     color: #262626;
@@ -27,17 +26,19 @@ ul {
 }
 /*header*/
 #hamburger-menu {
-    background-color: white;
     border : none;
     width: 30px;
     height: 30px;
     position: fixed;
-    top: 40px;
-    left: 40px;
+    top: 60px;
+    left: 50px;
 }
 #hamburger-menu img {
-    max-width: 30px;
-    height: auto;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 60px;
+    left: 40px;
 }
 .hamburger-nav {
     position: relative;
@@ -45,19 +46,20 @@ ul {
     top:0;   
 }
 .hamburger-menu-wrap {
-    position: absolute;
+    position: fixed;
     display: inline-block;
-    left: -300px;
+    left: 300px; /*버튼 누르면 left: 0으로 바꾸기*/
     top:0;
     z-index: 999;
     width: 300px;
     height: 900px;
     background-color: aqua;
     margin-top: 0;
-    transition: 0.3s; 
+    transition: 0.3s;
+    overflow-y:scroll;  
 } 
 #header-bar {
-    width: 1600px;
+    max-width: 1600px;
     height: 30px;
     background-color: #111;
     display: flex;
@@ -72,17 +74,22 @@ ul {
 }
 .main-nav {
     display: flex;
-    width: 1600px;
-    height: auto;
+    max-width: 1600px;
+    height: 80px;
     font-size: 1.2em;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
+    margin-left: 60px;
+}
+.main-nav img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
 }
 #search-pro {
-    width: 500px;
-    height: 30px;
-    border: 1px solid black;
+    width: 600px;
+    height: 40px;
+    border: none;
     border-radius: 20px;
     background-color: #ecececc2;
     color: black;
@@ -90,80 +97,146 @@ ul {
 }
 .main-nav ul {
     display: flex;
+    font-size: 0.8rem;
+    line-height: 25px;
+    font-weight: 900;
 }
 .main-nav ul li {
-    padding: 20px;   
+    padding: 10px;   
+}
+#logo {
+    width: 70px;
+    height: 35px;
 }
 
 
 /*main*/
+/*section1*/
 .sec1 {
-    max-width: 1400px;
-    height: 800px;
-    margin-left: 60px;
+    max-width: 1600px;
+    height: 850px;
+    margin-left: 60px
 }
 #txt1 {
-    width: 100%;
+    width: 61%;
     height: 100px;
     padding: 10px;
     padding-left: 80px;
+    margin-bottom: 20px;
 }
-.sec1-d {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.sec1-d1, .sec1-d2 {
+#sec1-d1 {
     display: inline-block;
-    width: 600px;
+    width: 45%;
     height: 650px;
+    margin-left: 60px;
 }
-.sec1-d1 {
-    background: url("https://www.ikea.com/images/-b41d31b5b20df2f8b385b7cd73dee2f2.jpg?f=l") no-repeat center;
-    max-width: 80%;
-    height: 600px;
-    background-size: cover;
-    overflow: hidden;
-    margin-right: 20px;
+#sec1-d1 img {
+    max-width: 100%;
+    height: auto;
 }
-.sec1-d2 {
-    background: url("https://www.ikea.com/images/8b/3f/8b3f08b1947dd09aea8ea61f3f23973c.jpg?f=l") no-repeat center;
-    max-width: 80%;
-    height: 600px;
-    background-size: cover;
-    overflow: hidden;
-    margin-left: 20px;
+#sec1-d2 {
+    display: inline-block;
+    width: 45%;
+    height: 650px;
+    margin-left: 30px;
 }
-.sec1-b {
-    display: flex;
-    width: 1400px;
-    height: 60px;
-    flex-direction: row;
-    
+#sec1-d2 img {
+    max-width: 100%;
+    height: auto;
 }
-#go-sale, #more-info ,#join-family{
-    
+#go-sale {
+    width: 140px;
+    height: 40px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
-#go-sale {
-    width: 150px;
-    height: 40px;
-    float: left;
-    margin-left: 80px;
-}
-#more-info{
+#more-info {
     width: 120px;
     height: 40px;
-    float: right;
-    margin-right: 560px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.7rem;
 }
 
+/*section2*/
+.sec2 {
+    max-width: 1600px;
+    height: 800px;
+    margin-left: 60px
+}
+
+.sec2 h2 {
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+.list {
+    overflow-x:scroll; 
+    white-space:nowrap;
+    margin-left: 60px;
+    height: 700px;
+    max-width: 1300px;
+}
+.list::webkit-scrollbar {
+    width: 50px;
+}
+.list li {
+    display: inline-block;
+    width: 410px;
+    margin-right: 20px;
+}
+.list li div{
+    width: 410px;
+    height: 680px;
+    margin-right: 15px;
+}
+.list li img {
+    width: 100%;
+    height: 60%;
+}
+.list li h2 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    padding-left: 18px;
+    font-weight: 550;
+    
+}
+.list li p{
+    font-size: 1rem;
+    white-space: pre-wrap;
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px 0 20px;
+    display: flex;
+}
+
+#sec2-l1 {
+    background-color: #274374;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+#sec2-l2 {
+    background-color: #f49778;
+}
+#sec2-l3 {
+    background-color: #96afe2;
+}
+#sec2-l4 {
+    background-color: #e5ded7;
+}
+#sec2-l5 {
+    background-color: #a2b9c2;
+}
 
 .links {
     max-width: 1600px;
@@ -192,6 +265,14 @@ ul {
 #join-family {
     width: 200px;
     height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.7rem;
+
 }
 .links-inner {
     max-width: 65%;
@@ -215,11 +296,43 @@ ul {
     width: 300px;
     position: absolute;
     bottom: 50px;
-    z-index: 5;
     margin-left: 100px;
 }
 .linkurl a {
     margin-right: 20px;
+}
+.linkurl img {
+    width: 20px;
+    height: 20px;
+}
+.change-country {
+    width: 300px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;    
+}
+#change-country-btn {
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+}    
+#change-country-btn, #change-language-btn {
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 45px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#change-language-btn{
+    width: 100px;
+    height: 40px;
+    background-color: #f2f2f2;
+}
+
+#change-country-btn img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 
