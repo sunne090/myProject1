@@ -22,7 +22,7 @@ ul {
 
 .container {
     max-width: 1600px;
-    position: relative;
+    height: max-content;
 }
 /*header*/
 /*hamburger-menu*/
@@ -249,7 +249,7 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 700px;
-    max-width: 1280px;
+    max-width: 1350px;
 }
 /*list의 스크롤 디자인*/
 .list::-webkit-scrollbar {
@@ -265,11 +265,11 @@ ul {
 }
 .list li {
     display: inline-block;
-    width: 410px;
+    width: 430px;
     margin-right: 20px;
 }
 .list li div{
-    width: 410px;
+    width: 430px;
     height: 680px;
     margin-right: 15px;
 }
@@ -314,7 +314,7 @@ ul {
 }
 
 #delivery-problem {
-    max-width: 1280px;
+    max-width: 1350px;
     height: 150px;
     background-color: #e7e6e6;
     margin: 30px 0 40px 120px;
@@ -343,7 +343,7 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 560px;
-    max-width: 1280px;
+    max-width: 1350px;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -401,6 +401,11 @@ ul {
     font-size: 1.3rem;
     font-weight: bold;
 }
+.new{
+    display: inline-block;
+    background-color: #FFD33B;
+    box-shadow: 0.11rem 0.11rem #FF0A0E;
+}
 
 /*section4*/
 .sec4 {
@@ -422,14 +427,14 @@ ul {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.932);
     float: right;
-    margin-right: 200px;
+    margin-right: 100px;
 
 }
 .new-product {
-    max-width: 1300px;
+    max-width: 1350px;
     height: 900px;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 #sec4-img1, #sec4-img2{
     width: 48%;
@@ -462,13 +467,13 @@ ul {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.932);
     float: right;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 .refresh-product {
-    max-width: 1300px;
+    max-width: 1350px;
     height: 900px;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 #sec5-img1, #sec5-img2{
     width: 48%;
@@ -486,7 +491,7 @@ ul {
     margin-bottom: 20px;
 }
 .solution {
-    width: 1300px;
+    width: 1350px;
     height: 350px;
     overflow-x: scroll;
     display: flex;
@@ -520,7 +525,7 @@ ul {
     position: relative;
 }
 .solution-item button {
-    width: max-content;
+    width: fit-content;
     height: 35px;
     background-color: rgb(247, 245, 245);
     color: black;
@@ -593,10 +598,9 @@ ul {
     margin-top: 50px;
 }
 #catalog, #food {
-    width: 45%;
+    width: 47%;
     height: 400px;
     display: inline-block;
-
 }
 #catalog img, #food img {
     width: 95%;
@@ -617,9 +621,12 @@ ul {
     border-radius: 30px;
     font-size: 0.8rem;
 }
+#catalog button:hover, #food button:hover, .sec4 button:hover, .sec5 button:hover{
+    border: 1px solid #8b8b8b;
+}
 /*section8*/
 .sec8 {
-    max-width: 1280px;
+    max-width: 1350px;
     height: 150px;
     background-color: #e7e6e6;
     margin-left: 35px;
@@ -637,7 +644,176 @@ ul {
     width: 20px;
     height: 20px;
 }
+.more-opt {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
+
+/*section9*/
+.sec9 {
+    max-width: 1600px;
+    height: auto;
+    margin-top: 20px;
+}
+.sec9-btn {
+    max-width: 1350px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.sec9-btn button {
+    width: fit-content;
+    padding: 0 15px 0 15px;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    background-color: rgb(241, 241, 241);
+    color: black;
+    font-weight: 900;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    border: none;
+}
+.sec9-btn button:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+.sec9-container {
+    display: grid;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9"
+    "item10 item11 item12";
+    grid-template-columns:repeat(3, 1fr);
+    width: 1350px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#sec9-item1 {
+    grid-area: item1;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/96c2f4720cb69a1/original/PH158522-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item2 {
+    grid-area: item2;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/5425b1c6a40dda8/original/PH158524-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item3 {
+    grid-area: item3;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/720bdc2f4e8db951/original/PH161816-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+    
+}
+#sec9-item4 {
+    grid-area: item4;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/5485848de1d93a3/original/PH165568-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item5 {
+    grid-area: item5;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/3b81f45cb3162a8d/original/PH164209-crop002.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item6 {
+    grid-area: item6;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/314fd312c5868abc/original/PH164210-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item7 {
+    grid-area: item7;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/23a6f4b747e029f0/original/PH164465-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item8 {
+    grid-area: item8;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/597c1848046a57f/original/PH157396-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item9 {
+    grid-area: item9;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/5d323755d0092c96/original/PH151174-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item10 {
+    grid-area: item10;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/4ae9bf3115fb075b/original/PH157374-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item11 {
+    grid-area: item11;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/1c60f7fa0943ea8f/original/PH153047-crop004.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#sec9-item12 {
+    grid-area: item12;
+    max-width: 400px;
+    height: 600px;
+    background: url("https://www.ikea.com/ext/ingkadam/m/1bddfaf55ad21a3f/original/PH169109-crop001.jpg?f=m") no-repeat center;
+    background-size: contain;
+}
+#more-btn {
+    width: fit-content;
+    padding: 0 15px 0 15px;
+    height: 40px;
+    padding: 0 20px 0 20px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    border: none;
+    margin-left: 40%;
+}
+
+/*section10*/
+.sec10 {
+    max-width: 1600px;
+    height: 800px;
+    margin-top: 50px;
+}
+.sec10-all {
+    width: 1350px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.sec10-d1, .sec10-d2, .sec10-d3 {
+    width: 50%;
+    height: 600px;
+    background-color: #f1f1f1;
+    margin-right: 20px;
+}
+.sec10-all img{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
 
 /*section: links*/
 .links {
@@ -746,7 +922,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    bottom: -5000px;
+    bottom: -6000px;
 }
 #ikea-copy {
     width: 50%;
