@@ -14,35 +14,34 @@
         <header id="header">
             <nav class="hamburger-nav">
                 <div class="hamburger-menu-wrap">
-                    <div>
-                        <a href="https://www.ikea.com/kr/ko/">
-                            <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
-                        </a> 
-                    </div>
-                    <div>
-                        <ul>
+                    <button>취소</button>
+                    <a href="https://www.ikea.com/kr/ko/">
+                        <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
+                    </a> 
+                    <div id="hamburger-list">
+                        <ul id="hamburger-list1">
                             <li>
                                 <h1>모든 제품</h1>
                             </li>
                             <li>
                                 <h1>디지털 쇼룸</h1>
                             </li>
-                            <li>할인 중</li>
-                            <li>신제품</li>
-                            <li>더 낮은 새로운 가격</li>
-                            <li>아이디어</li>
-                            <li>IKEA Live</li>
-                            <li>새로운 소식</li>
-                            <li>매장안내</li>
-                            <li>IKEA Family</li>
-                            <li>고객지원</li>
-                            <li>배송조회</li>
-                            <li>내 프로필</li>
+                            <li class=li1>할인 중</li>
+                            <li class=li1>신제품</li>
+                            <li class=li1>더 낮은 새로운 가격</li>
+                            <li class=li1>아이디어</li>
+                            <li class=li1>IKEA Live</li>
+                            <li class=li1>새로운 소식</li>
+                            <li class=li2>매장안내</li>
+                            <li class=li2>IKEA Family</li>
+                            <li class=li2>고객지원</li>
+                            <li class=li2>배송조회</li>
+                            <li class=li2>내 프로필</li>
                         </ul>
                     </div>
-                    <div class="change-country">   
-                        <button id="change-country-btn"><img src="images/001-globe.svg">국가 변경</button>
-                        <select name="language" id="change-language-btn">
+                    <div class="h-change-country">   
+                        <button id="h-change-country-btn"><img src="images/001-globe.svg">국가 변경</button>
+                        <select name="language" id="h-change-language-btn">
                             <option value="korean" selected>한국어</option>
                             <option value="english">English</option>
                         </select>
@@ -127,180 +126,238 @@
                         </li>
                     </ul>
                 </section>
-                <section>
-                <h3>추천제품</h3>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>더 낮은 새로운 가격</span>
-                        <p>NIKKEBY 니케뷔</p>
-                        <p>4칸서랍장, 84x70 cm</p>
-                        <p>\ 99,900</p>
-                        <p>\ 89,900</p>
+                <article>
+                    <div id="delivery-problem">
+                        <h1>배송 안내</h1>
+                        <p>배송사 문제로 성남시 수정구 및 일부 중원구 지역의 배송이 당분간 어려울 수 있습니다. 불편을 드려 죄송합니다.</p>
                     </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>더 낮은 새로운 가격</span>
-                        <p>NIKKEBY 니케뷔</p>
-                        <p>4칸서랍장, 84x70 cm</p>
-                        <p>\ 99,900</p>
-                        <p>\ 89,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>NIKKEBY 니케뷔</p>
-                        <p>2칸서랍장, 46x70 cm</p>
-                        <p>\ 79,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>LENNART 렌나르트</p>
-                        <p>서랍유닛</p>
-                        <p>\ 15,000</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>IKEA PS</p>
-                        <p>수납장, 116x63 cm</p>
-                        <p>\ 54,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>HELMER 헬메르</p>
-                        <p>이동식서랍유닛, 28x69 cm</p>
-                        <p>\ 29,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>더 낮은 새로운 가격</span>
-                        <p>FJÄLLBO 피엘보</p>
-                        <p>TV장식장, 150x86x54 cm</p>
-                        <p>\ 179,000</p>
-                        <p>\ 149,000</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>더 낮은 새로운 가격</span>
-                        <p>NIKKEBY 니케뷔</p>
-                        <p>옷걸이행거, 40x142 cm</p>
-                        <p>\ 59,900</p>
-                        <p>\ 49,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>더 낮은 새로운 가격</span>
-                        <p>NIKKEBY 니케뷔</p>
-                        <p>옷걸이행거, 45x170 cm</p>
-                        <p>\ 69,900</p>
-                        <p>\ 59,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <span>NEW</span>
-                        <p>BAGGEBO 바게보</p>
-                        <p>TV장식장, 90x35x40 cm</p>
-                        <p>\ 18,000</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                        <p>LIXHULT 릭스훌트</p>
-                        <p>수납장, 60x35 cm</p>
-                        <p>\ 32,900</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>KOLBJÖRN 콜비에른</p>
-                        <p>수납장,실내외겸용, 80x81 cm</p>
-                        <p>\ 99,000</p>
-                    </div>
+                </article>
+                <section class="sec3">
+                <h2>추천제품</h2>
+                <ul class="recommend">
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-4-drawers-grey-green__0729044_pe738503_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <span>더 낮은 새로운 가격</span>
+                                <p class="item-name">NIKKEBY 니케뷔</p>
+                                <p class="item-type">4칸서랍장, 84x70 cm</p>
+                                <p class="cancel-price">\ 99,900</p>
+                                <p class="item-price">\ 89,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/fjaellbo-tv-bench-black__0473390_pe614545_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <span>더 낮은 새로운 가격</span>
+                                <p class="item-name">FJÄLLBO 피엘보</p>
+                                <p class="item-type">TV장식장, 150x36x54 cm</p>
+                                <p class="cancel-price">\ 179,000</p>
+                                <p class="item-price">\ 149,000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-4-drawers-red__0729045_pe738504_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <span>더 낮은 새로운 가격</span>
+                                <p class="item-name">NIKKEBY 니케뷔</p>
+                                <p class="item-type">4칸서랍장, 84x70 cm</p>
+                                <p class="cancel-price">\ 99,900</p>
+                                <p class="item-price">\ 89,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/kolbjoern-cabinet-in-outdoor-green__0762731_pe752182_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <p class="item-name">KOLBJÖRN 콜비에른</p>
+                                <p class="item-type">수납장,실내외겸용, 80x81 cm</p>
+                                <p class="item-price">\ 99,000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/ikea-ps-cabinet-white__0644741_pe702929_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <p class="item-name">IKEA PS</p>
+                                <p class="item-type">수납장, 119x63 cm</p>
+                                <p class="item-price">\ 54,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/baggebo-tv-bench-metal-white__1023961_pe833372_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <span>NEW</span>
+                                <p class="item-name bag">BAGGEBO 바게보</p>
+                                <p class="item-type">TV장식장, 90x35x40 cm</p>
+                                <p class="item-price">\ 18,000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/fjaellbo-shelving-unit-black__0795065_pe765849_s5.jpg?f=xl" alt="">
+                            <div class="item-info">
+                                <span>더 낮은 새로운 가격</span>
+                                <p class="item-name">FJÄLLBO 피엘보</p>
+                                <p class="item-type">선반유닛, 51x95 cm</p>
+                                <p class="cancel-price">\ 79,900</p>
+                                <p class="item-price">\ 59,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-2-drawers-grey-green__0729042_pe738505_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <p class="item-name">NIKKEBY 니케뷔</p>
+                                <p class="item-type">2칸서랍장, 46x70 cm</p>
+                                <p class="item-price">\ 89,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/ikea-ps-cabinet-blue__0644742_pe702930_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <p class="item-name">IKEA PS</p>
+                                <p class="item-type">수납장, 119x63 cm</p>
+                                <p class="item-price">\ 54,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/ivar-cabinet-with-doors-green-mesh__0945011_pe797528_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <p class="item-name">IVAR 이바르</p>
+                                <p class="item-type">도어수납장, 80x83 cm</p>
+                                <p class="item-price">\ 130,000</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/lixhult-cabinet-metal-grey__0644746_pe702934_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <p class="item-name">LIXHULT 릭스훌트</p>
+                                <p class="item-type">수납장, 60x35 cm</p>
+                                <p class="item-price">\ 32,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="https://www.ikea.com/kr/ko/images/products/nikkeby-clothes-rack-grey-green__0727608_pe735761_s5.jpg?f=s" alt="">
+                            <div class="item-info">
+                                <span>더 낮은 새로운 가격</span>
+                                <p class="item-name">NIKKEBY 니케뷔</p>
+                                <p class="item-type">옷걸이행거, 40x142 cm</p>
+                                <p class="cancel-price">\ 59,900</p>
+                                <p class="item-price">\ 49,900</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            <section class="sec4">
+                <h2>신제품을 만나보세요</h2>
+                <button>신제품 보러가기</button>
+                <div class="new-product">
+                    <img id="sec4-img1" src="https://www.ikea.com/ext/ingkadam/m/653e6109e4c8ae04/original/PH177699.jpg?f=xl" alt="">
+                    <img id="sec4-img2" src="https://www.ikea.com/ext/ingkadam/m/6de43b0fc289e52e/original/PH179881.jpg?f=xl" alt="">
                 </div>
             </section>
-            <article>
-                <h2>신제품을 만나보세요</h2>
-                <div>
-                    <img src="https://www.ikea.com/ext/ingkadam/m/653e6109e4c8ae04/original/PH177699.jpg?f=xl" alt="">
-                    <img src="https://www.ikea.com/ext/ingkadam/m/6de43b0fc289e52e/original/PH179881.jpg?f=xl" alt="">
-                </div>
-            </article>
-            <article>
+            <section class="sec5">
                 <h2>편안한 일상과 재충전</h2>
                 <p>편안한 소파베드와 새 이불커버로 한껏 편안한 휴식으로 재충전의 시간을 가져보세요. 이불커버는 내 피부를 밤새 뽀송뽀송하도록 지켜준답니다.</p>
                 <button>침구 보러가기</button>
-                <div>
-                    <img src="https://www.ikea.com/ext/ingkadam/m/7ece4e71dc12c8b8/original/PH177651.jpg?f=xl" alt="">
-                    <img src="https://www.ikea.com/ext/ingkadam/m/38b7208f30a0a022/original/PH177656.jpg?f=xl" alt="">
+                <div class="refresh-product">
+                    <img id="sec5-img1" src="https://www.ikea.com/ext/ingkadam/m/7ece4e71dc12c8b8/original/PH177651.jpg?f=xl" alt="">
+                    <img id="sec5-img2" src="https://www.ikea.com/ext/ingkadam/m/38b7208f30a0a022/original/PH177656.jpg?f=xl" alt="">
                 </div>
-            </article>
-            <article>
+            </section>
+            <section6 class="sec6">
                 <h2>지속가능한 내일을 위한 솔루션</h2>
-                <div>
-                    <p>집에서 지속가능한 생활을 실천할 수 있는 아이디어</p>
-                    <button>-></button>
-                </div>
-                <div>
-                    <button>응원해요! 당신의 작은 실천</button>
-                </div>
-                <div>
-                    <button>물 아끼기</button>
-                </div>
-                <div>
-                    <button>에너지 아끼기</button>
-                </div>
-                <div>
-                    <button>건강한 집</button>
-                </div>
-                <div>
-                    <button>쓰레기 줄이기</button>
-                </div>
-                <div>
-                    <button>지속가능한 기구</button>
-                </div>
-                <div>
-                    <button>지속가능한 소재</button>
-                </div>
-                <div>
-                    <button>지속가능한 먹거리</button>
-                </div>
-            </article>
-            <article>
-                <div>
+                <ul class="solution">
+                    <li>
+                        <div class="solution-title">
+                            <p>집에서 지속가능한 생활을 실천할 수 있는 아이디어</p>
+                            <button>-></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img1">
+                            <button class="btn-long">응원해요! 당신의 작은 실천</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img2">
+                            <button>물 아끼기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img3">
+                            <button>에너지 아끼기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img4">
+                            <button>건강한 집</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img5">
+                            <button class="btn-long">쓰레기 줄이기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img6">
+                            <button class="btn-long">지속가능한 기구</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img7">
+                            <button class="btn-long">지속가능한 소재</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="solution-item img8">
+                            <button>지속가능한 먹거리</button>
+                        </div>
+                    </li>
+                </ul>
+            </section6>
+            <section class="sec7">
+                <div id=catalog>
+                    <img src="https://www.ikea.com/images/0a/3c/0a3caefd2ed7e92bc5a4656b06e8ae30.jpg?f=l" alt="">
                     <button>2021 카탈로그</button>
                 </div>
-                <div>
+                <div id="food">
+                    <img src="https://www.ikea.com/images/27/b9/27b97d64eee6cc4eec70fe0d6c5e3d1c.jpg?f=l" alt="">
                     <button>IKEA 푸드</button>
                 </div>
-            </article>
-            <section>
-                <div>
-                    <p>배송 서비스</p>
+            </section>
+            <section class="sec8">
+                <div id="d-service">
+                    <p><img src="./images/001-delivery.svg" alt=""></p>
+                    <h4>배송 서비스</h4>
                     <p>편리한 배송 옵션을 살펴보세요.</p>
-                    <p>더보기</p>
+                    <p class="more-opt">더보기</p>
                 </div>
-                <div>
-                    <p>조립 서비스</p>
+                <div id="a-service">
+                    <p><img src="./images/002-automation.svg" alt=""></p>
+                    <h4>조립 서비스</h4>
                     <p>IKEA에게 조립을 맡기고 소중한 시간을 아끼세요.</p>
-                    <p>더보기</p>
+                    <p class="more-opt">더보기</p>
                 </div>
             </section>
             <article>
@@ -314,6 +371,7 @@
                     <button type="button">안전사고 예방 방법</button>
                 </div>
             </article>
+
             <section class="links">
                 <div class="join-fam">
                     <h2>IKEA Family</h2>
@@ -383,10 +441,9 @@
                         <option value="english">English</option>
                     </select>
                 </div>       
-            </section>
-            
-            
+            </section>   
         </main>
+
         <footer class="footer">
             <div id="ikea-copy">
                 <P>ⓒInter IKEA Systems B.V 1999-2021</P>

@@ -10,7 +10,7 @@ body {
     color: #111;
     font-size: 15px;
     line-height: 1.5;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 a {
     color: #262626;
@@ -21,10 +21,11 @@ ul {
 }
 
 .container {
-    width: 100%;
     max-width: 1600px;
+    position: relative;
 }
 /*header*/
+/*hamburger-menu*/
 #hamburger-menu {
     border : none;
     width: 30px;
@@ -43,21 +44,85 @@ ul {
 .hamburger-nav {
     position: relative;
     left: 0px;
-    top:0;   
+    top:0;
+   
 }
 .hamburger-menu-wrap {
     position: fixed;
     display: inline-block;
-    left: 300px; /*버튼 누르면 left: 0으로 바꾸기*/
+    left: -350px; /*버튼 누르면 left: 0으로 바꾸기*/
     top:0;
     z-index: 999;
-    width: 300px;
+    width: 350px;
     height: 900px;
-    background-color: aqua;
+    background-color: white;
     margin-top: 0;
-    transition: 0.3s;
-    overflow-y:scroll;  
-} 
+    transition: 0.3s; 
+    overflow: auto;  
+}
+.hamburger-menu-wrap button {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.hamburger-menu-wrap #logo {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+#hamburger-list {
+    width: 200px;
+    height: 500px;
+    margin: 120px 25px 0px 60px;
+}
+#hamburger-list li:hover {
+    text-decoration: underline;
+}
+#hamburger-list ul li {
+    padding: 5px;
+    text-align: left;
+}
+.li1:nth-child(8) {
+    margin-bottom: 30px;
+}
+.li1 {
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+.li2 {
+    font-size: 0.9rem;
+}
+.h-change-country{
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    margin-left: 60px;
+}
+#h-change-country-btn {
+    width: 120px;
+    height: 40px;
+    top: 0;
+    left: 120px;
+}    
+#h-change-country-btn, #h-change-language-btn {
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 45px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#h-change-language-btn{
+    width: 100px;
+    height: 40px;
+    background-color: #f2f2f2;
+}
+#h-change-country-btn img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+/*header-bar-menu*/
 #header-bar {
     max-width: 1600px;
     height: 30px;
@@ -80,6 +145,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin-left: 60px;
+    background-color: white;
 }
 .main-nav img {
     width: 20px;
@@ -183,10 +249,19 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 700px;
-    max-width: 1300px;
+    max-width: 1280px;
 }
-.list::webkit-scrollbar {
-    width: 50px;
+/*list의 스크롤 디자인*/
+.list::-webkit-scrollbar {
+    height: 4px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
 .list li {
     display: inline-block;
@@ -238,6 +313,333 @@ ul {
     background-color: #a2b9c2;
 }
 
+#delivery-problem {
+    max-width: 1280px;
+    height: 150px;
+    background-color: #e7e6e6;
+    margin: 30px 0 40px 120px;
+    padding: 40px;
+}
+#delivery-problem h1 {
+    margin-bottom: 10px;
+}
+#delivery-problem p {
+    font-size: 0.9rem;
+}
+
+/*section3*/
+.sec3 {
+    max-width: 1600px;
+    height: 700px;
+    margin-left: 60px;
+}
+
+.sec3 h2 {
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+.recommend {
+    overflow-x:scroll; 
+    white-space:nowrap;
+    margin-left: 60px;
+    height: 560px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.recommend::-webkit-scrollbar {
+    height: 4px;
+}
+
+.recommend::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.recommend::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.recommend li {
+    padding-right: 20px;
+}
+.item {
+    width: 300px;
+    height: 530px;
+    display: block;
+}
+.item img {
+    width: 280px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+.item-info {
+    width: 250px;
+    height: 180px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.item-info span {
+    color: red;
+    font-weight: bold;
+    font-weight: 700;
+}
+.item-name{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.item-type {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.cancel-price {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+.item-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/*section4*/
+.sec4 {
+    max-width: 1600px;
+    height: 1000px;
+    margin-top: 50px;
+}
+.sec4 h2 {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.sec4 button {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 45px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.932);
+    float: right;
+    margin-right: 200px;
+
+}
+.new-product {
+    max-width: 1300px;
+    height: 900px;
+    display: inline-block;
+    margin-left: 40px;
+}
+#sec4-img1, #sec4-img2{
+    width: 48%;
+    height: 800px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/*section5*/
+.sec5 {
+    max-width: 1600px;
+    height: 1000px;
+}
+.sec5 h2 {
+    margin-bottom: 20px;
+}
+.sec5 p {
+    font-size: 0.9rem;
+    width:42%;
+    display: inline-block;
+    margin-left: 60px;
+}
+.sec5 button {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 45px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.932);
+    float: right;
+    margin-right: 200px;
+}
+.refresh-product {
+    max-width: 1300px;
+    height: 900px;
+    display: inline-block;
+    margin-left: 40px;
+}
+#sec5-img1, #sec5-img2{
+    width: 48%;
+    height: 800px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+/*section6*/
+.sec6 {
+    max-width: 1600px;
+    height: 1000px;
+    margin-top: 50px;
+}
+.sec6 h2 {
+    margin-bottom: 20px;
+}
+.solution {
+    width: 1300px;
+    height: 350px;
+    overflow-x: scroll;
+    display: flex;
+    margin-left: 40px;
+}
+.solution::-webkit-scrollbar {
+    height: 4px;
+}
+
+.solution::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.solution::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.solution-title {
+    width: 230px;
+    height: 310px;
+    background-color: #00853E;
+    margin-right: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 30px;
+    font-size: 1rem;
+}
+.solution-item {
+    width: 230px;
+    height: 310px;
+    margin-right: 15px;
+    position: relative;
+}
+.solution-item button {
+    width: max-content;
+    height: 35px;
+    background-color: rgb(247, 245, 245);
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    border-radius: 45px;
+    padding: 0 10px 0 10px;
+    border: none;
+}
+.solution-item button:hover {
+    background-color: #cccccc;
+}
+
+.img1{
+    background: url("https://www.ikea.com/images/fd/a7/fda7b18b19a76da56e0dbcdeda5b4f7b.jpg?f=xxs") no-repeat center;   
+}
+.img1 button {
+    left: 30px;
+}
+.img2{
+    background: url("https://www.ikea.com/images/tartsmet-glypen-f858ed7c6797c35c437b2ee9ea8144be.jpg?f=xxs") no-repeat center;   
+}
+.img2 button {
+    left: 30%;
+}
+.img3{
+    background: url("https://www.ikea.com/images/-12bddc4edf8c10bd339a8a993cd78aa8.jpg?f=xxs") no-repeat center;   
+}
+.img3 button {
+    left: 28%;
+}
+.img4{
+    background: url("https://www.ikea.com/images/rosenskaerm-74fafb5c3e66045c5fcdc7c0b82dbd22.jpg?f=xxs") no-repeat center;   
+}
+.img4 button {
+    left: 30%;
+}
+.img5{
+    background: url("https://www.ikea.com/images/sortera-2368d19be345419ccdc30ffe6df5a51a.jpg?f=xxs") no-repeat center;   
+}
+.img5 button {
+    left: 28%;
+}
+.img6{
+    background: url("https://www.ikea.com/images/ivar-696cb2a6ba4bbc83c5e8226a2bef560c.jpg?f=xxs") no-repeat center;   
+}
+.img6 button {
+    left: 30px;
+}
+.img7{
+    background: url("https://www.ikea.com/images/gamlehult-ce886cf9fddd6a7b373a63db87f330ec.jpg?f=xxs") no-repeat center;   
+}
+.img7 button {
+    left: 30px;
+}
+.img8{
+    background: url("https://www.ikea.com/images/ikea-365-365-huvudroll-5ad685907ab46dec5bbf0b2820dd4192.jpg?f=xxs") no-repeat center;   
+}
+.img8 button {
+    left: 30px;
+}
+
+/*section7*/
+.sec7 {
+    max-width: 1600px;
+    height: 500px;
+    margin-top: 50px;
+}
+#catalog, #food {
+    width: 45%;
+    height: 400px;
+    display: inline-block;
+
+}
+#catalog img, #food img {
+    width: 95%;
+    height: 350px;
+    display: block;
+    margin-left: 40px;
+}
+#catalog button, #food button {
+    width: fit-content;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 0 20px 0 20px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+/*section8*/
+.sec8 {
+    max-width: 1280px;
+    height: 150px;
+    background-color: #e7e6e6;
+    margin-left: 35px;
+}
+#d-service, #a-service {
+    width: 48%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 20px;
+}
+#d-service h4, #a-service h4{
+    margin-bottom: 5px;
+}
+#d-service img, #a-service img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*section: links*/
 .links {
     max-width: 1600px;
     height: 500px;
@@ -335,8 +737,6 @@ ul {
     margin-right: 10px;
 }
 
-
-
 /*footer*/
 .footer {
     background: #f2f2f2;
@@ -345,6 +745,8 @@ ul {
     padding: 20px 40px;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    bottom: -5000px;
 }
 #ikea-copy {
     width: 50%;
