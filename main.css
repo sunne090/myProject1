@@ -10,7 +10,7 @@ body {
     color: #111;
     font-size: 15px;
     line-height: 1.5;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a {
     color: #262626;
@@ -20,50 +20,62 @@ ul {
     list-style-type: none;
 }
 
-.container {
-    max-width: 1600px;
-    height: max-content;
-}
+
 /*header*/
 /*hamburger-menu*/
-#hamburger-menu {
-    border : none;
-    width: 30px;
-    height: 30px;
+#h-btn-d {
     position: fixed;
-    top: 60px;
-    left: 50px;
+    top: 50px;
+    left: 30px;
+    width: 40px;
+    height:40px;
+    border-radius: 45px;
+    background-color: white;
 }
-#hamburger-menu img {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 60px;
-    left: 40px;
+#h-btn, #cancel {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
 }
-.hamburger-nav {
-    position: relative;
-    left: 0px;
-    top:0;
-   
+#h-btn-d:hover , #h-btn-c:hover {
+    background-color: #dddddd;
 }
 .hamburger-menu-wrap {
     position: fixed;
-    display: inline-block;
-    left: -350px; /*버튼 누르면 left: 0으로 바꾸기*/
+    left: -350px;
     top:0;
     z-index: 999;
     width: 350px;
     height: 900px;
     background-color: white;
     margin-top: 0;
-    transition: 0.3s; 
-    overflow: auto;  
+    transition: all 0.2s ease;
 }
-.hamburger-menu-wrap button {
+.hamburger-menu-wrap.open {
+    left: 0;
+}
+.page_cover.open { 
+    display: block; 
+} 
+.page_cover { 
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    top: 0px; 
+    left: 0px;
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 4; 
+    display: none; 
+}
+#h-btn-c {
     position: absolute;
     top: 50px;
     left: 30px;
+    background-color: white;
+    border-radius: 45px;
+    width: 40px;
+    height: 40px;
 }
 .hamburger-menu-wrap #logo {
     position: absolute;
@@ -94,15 +106,13 @@ ul {
 }
 .h-change-country{
     width: 270px;
-    height: 200px;
+    height: 100px;
     position: absolute;
     margin-left: 60px;
 }
 #h-change-country-btn {
     width: 120px;
     height: 40px;
-    top: 0;
-    left: 120px;
 }    
 #h-change-country-btn, #h-change-language-btn {
     text-align: center;
@@ -110,16 +120,20 @@ ul {
     border-radius: 45px;
     font-size: 0.8rem;
     font-weight: bold;
+    background-color: white;
 }
 #h-change-language-btn{
     width: 100px;
     height: 40px;
-    background-color: #f2f2f2;
+    padding-left: 20px;
 }
 #h-change-country-btn img{
     width: 16px;
     height: 16px;
     margin-right: 10px;
+}
+#h-change-country-btn:hover, #h-change-language-btn:hover{
+    border: 1px solid #9c9a9a;
 }
 
 /*header-bar-menu*/
@@ -131,57 +145,85 @@ ul {
     flex-direction: row;
     color: #fff;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #header-bar p {
     margin-right: 50px;
     padding-top: 3px;
     font-size: 0.8rem;
 }
+#header-bar img {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+}
+/*header-nav*/
 .main-nav {
     display: flex;
-    max-width: 1600px;
+    max-width: 1350px;
     height: 80px;
     font-size: 1.2em;
     align-items: center;
     justify-content: center;
-    margin-left: 60px;
+    margin-left: 120px;
     background-color: white;
 }
-.main-nav img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+
+
+#logo {
+    width: 70px;
+    height: 35px;
+    margin-right: 20px;
+}
+#header-list1 {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+#header-list1 li{
+    margin-right: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#search {
+    width: 50%;
+    height: auto;
+    margin-right: 10px;
+        
 }
 #search-pro {
-    width: 600px;
+    width: 650px;
     height: 40px;
     border: none;
     border-radius: 20px;
     background-color: #ecececc2;
     color: black;
-    padding-left: 20px;  
+    padding-left: 20px;
 }
-.main-nav ul {
+#header-list2 {
     display: flex;
-    font-size: 0.8rem;
-    line-height: 25px;
-    font-weight: 900;
+    flex-direction: row;
 }
-.main-nav ul li {
-    padding: 10px;   
+#header-list2 li img{
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0 10px;
 }
-#logo {
-    width: 70px;
-    height: 35px;
-}
+
 
 
 /*main*/
+.main{
+    max-width: max-content;
+    height: 9000px;
+}
 /*section1*/
 .sec1 {
-    max-width: 1600px;
+    max-width: 1300px;
     height: 850px;
-    margin-left: 60px
+    margin-left: 100px
 }
 #txt1 {
     width: 61%;
@@ -232,12 +274,15 @@ ul {
     font-weight: bold;
     font-size: 0.7rem;
 }
+#go-sale:hover, #more-info:hover {
+    background-color: #262626;
+}
 
 /*section2*/
 .sec2 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 800px;
-    margin-left: 60px
+    margin-left: 100px
 }
 
 .sec2 h2 {
@@ -249,7 +294,7 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 700px;
-    max-width: 1350px;
+    max-width: 1200px;
 }
 /*list의 스크롤 디자인*/
 .list::-webkit-scrollbar {
@@ -265,15 +310,16 @@ ul {
 }
 .list li {
     display: inline-block;
-    width: 430px;
-    margin-right: 20px;
+    width: 390px;
+    margin-right: 10px;
 }
-.list li div{
-    width: 430px;
+.sec2-content{
+    width: 390px;
     height: 680px;
     margin-right: 15px;
+    position: relative;
 }
-.list li img {
+.con-img{
     width: 100%;
     height: 60%;
 }
@@ -281,7 +327,7 @@ ul {
     font-size: 1.4rem;
     margin-top: 20px;
     margin-bottom: 0;
-    display: flex;
+    display: block;
     padding-left: 18px;
     font-weight: 550;
     
@@ -290,9 +336,11 @@ ul {
     font-size: 1rem;
     white-space: pre-wrap;
     width: 100%;
-    height: 100px;
+    height: 150px;
     padding: 10px 20px 0 20px;
-    display: flex;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
 }
 
 #sec2-l1 {
@@ -300,6 +348,25 @@ ul {
     color: #f1f1f1;
     font-weight: bold;
 }
+.sec2-btn {
+    position: absolute;
+    bottom: -12px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border:none;
+    border-radius: 45px;
+    background: url("images/002-right-arrow.svg") no-repeat center;
+    background-size: cover;
+    background-color: white;
+}
+
+
+.sec2-content button:hover {
+    opacity: 0.8;
+}
+
+
 #sec2-l2 {
     background-color: #f49778;
 }
@@ -314,10 +381,10 @@ ul {
 }
 
 #delivery-problem {
-    max-width: 1350px;
+    max-width: 1200px;
     height: 150px;
     background-color: #e7e6e6;
-    margin: 30px 0 40px 120px;
+    margin: 30px 0 40px 160px;
     padding: 40px;
 }
 #delivery-problem h1 {
@@ -329,9 +396,9 @@ ul {
 
 /*section3*/
 .sec3 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 700px;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .sec3 h2 {
@@ -343,7 +410,7 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 560px;
-    max-width: 1350px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -361,11 +428,14 @@ ul {
 }
 .recommend li {
     padding-right: 20px;
+    
+    position: relative;
 }
 .item {
     width: 300px;
     height: 530px;
     display: block;
+    margin-left: 40px;
 }
 .item img {
     width: 280px;
@@ -380,6 +450,18 @@ ul {
     padding-top: 20px;
     padding-bottom: 5px;
 }
+.recommend li button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    border: none;
+    background: url("./images/003-add-to-cart.svg") center no-repeat;
+    background-size: cover;
+    display: none;
+}
+
 .item-info span {
     color: red;
     font-weight: bold;
@@ -409,7 +491,7 @@ ul {
 
 /*section4*/
 .sec4 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 1000px;
     margin-top: 50px;
 }
@@ -427,11 +509,11 @@ ul {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.932);
     float: right;
-    margin-right: 100px;
+    margin-right: 120px;
 
 }
 .new-product {
-    max-width: 1350px;
+    max-width: 1200px;
     height: 900px;
     display: inline-block;
     margin-left: 60px;
@@ -445,7 +527,7 @@ ul {
 
 /*section5*/
 .sec5 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 1000px;
 }
 .sec5 h2 {
@@ -467,10 +549,10 @@ ul {
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.932);
     float: right;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 .refresh-product {
-    max-width: 1350px;
+    max-width: 1200px;
     height: 900px;
     display: inline-block;
     margin-left: 60px;
@@ -483,7 +565,7 @@ ul {
 }
 /*section6*/
 .sec6 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 1000px;
     margin-top: 50px;
 }
@@ -491,11 +573,11 @@ ul {
     margin-bottom: 20px;
 }
 .solution {
-    width: 1350px;
+    width: 1200px;
     height: 350px;
     overflow-x: scroll;
     display: flex;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .solution::-webkit-scrollbar {
     height: 4px;
@@ -517,7 +599,23 @@ ul {
     font-weight: bold;
     padding: 30px;
     font-size: 1rem;
+    position: relative;
 }
+.solution-title button {
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: 50px;
+    border:none;
+    background:url("./images/002-right-arrow.svg") no-repeat center;
+    background-size: cover;
+    background-color: white;
+}
+.solution-title button:hover {
+    opacity: 0.8;
+}
+
 .solution-item {
     width: 230px;
     height: 310px;
@@ -593,9 +691,10 @@ ul {
 
 /*section7*/
 .sec7 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 500px;
     margin-top: 50px;
+    margin-left: 20px;
 }
 #catalog, #food {
     width: 47%;
@@ -626,13 +725,13 @@ ul {
 }
 /*section8*/
 .sec8 {
-    max-width: 1350px;
+    width: 1200px;
     height: 150px;
     background-color: #e7e6e6;
-    margin-left: 35px;
+    margin-left: 60px;
 }
 #d-service, #a-service {
-    width: 48%;
+    width: 49%;
     text-align: center;
     display: inline-block;
     padding-top: 20px;
@@ -647,20 +746,24 @@ ul {
 .more-opt {
     text-decoration: underline;
     cursor: pointer;
+    color:#616161;
+}
+.more-opt:hover {
+    color: black;
 }
 
 
 /*section9*/
 .sec9 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: auto;
     margin-top: 20px;
 }
 .sec9-btn {
-    max-width: 1350px;
+    max-width: 1200px;
     height: 50px;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .sec9-btn button {
     width: fit-content;
@@ -686,10 +789,11 @@ ul {
     "item7 item8 item9"
     "item10 item11 item12";
     grid-template-columns:repeat(3, 1fr);
-    width: 1350px;
+    width: 1200px;
     height: auto;
-    margin-left: 40px;
+    margin-left: 60px;
     margin-top: 10px;
+    gap: 10px;
 }
 #sec9-item1 {
     grid-area: item1;
@@ -789,49 +893,76 @@ ul {
     border: none;
     margin-left: 40%;
 }
+#more-btn:hover{
+    opacity: 0.8;
+}
 
 /*section10*/
 .sec10 {
-    max-width: 1600px;
+    max-width: 1350px;
     height: 800px;
     margin-top: 50px;
 }
 .sec10-all {
-    width: 1350px;
+    width: 1200px;
     height: 700px;
     display: flex;
     flex-direction: row;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .sec10-d1, .sec10-d2, .sec10-d3 {
-    width: 50%;
+    width: 400px;
     height: 600px;
     background-color: #f1f1f1;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .sec10-all img{
-    width: 100%;
+    width: 400px;
     height: 400px;
     margin-bottom: 30px;
 }
+.sec10-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 45px;
+    background-color: white;
+}
+.sec10-btn img {
+    width: 50px;
+    height: 50px;
+}
+.sec10-btn:hover {
+    opacity: 0.8;
+}
 
-/*section: links*/
-.links {
+.footer {
     max-width: 1600px;
-    height: 500px;
-    background-color: #f2f2f2;
+    height: 700px;
+    background-color: #f1f1f1;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
-    border-bottom:1px solid rgb(199, 199, 199);
     
 }
+/*section links*/
+.links {
+    width: 1600px;
+    height: 500px;
+    position: relative;
+    border-bottom:1px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: row; 
+}
+
 .join-fam {
     width: 30%;
     margin: 20px 0 20px 20px;
     padding-top: 100px;
     padding-left: 80px;
 }
+
 .join-fam p {
     font-size: 0.8rem;
     margin-top: 10px;
@@ -850,7 +981,9 @@ ul {
     margin-top: 20px;
     font-weight: bold;
     font-size: 0.7rem;
-
+}
+#join-family:hover {
+    opacity: 0.8;
 }
 .links-inner {
     max-width: 65%;
@@ -882,6 +1015,10 @@ ul {
 .linkurl img {
     width: 20px;
     height: 20px;
+    border: 1px solid #cccccc;
+}
+.linkurl img:hover{
+    border: #616161;
 }
 .change-country {
     width: 300px;
@@ -901,10 +1038,14 @@ ul {
     font-size: 0.8rem;
     font-weight: bold;
 }
+#change-country-btn:hover, #change-language-btn:hover {
+    border: 1px solid #616161;
+}
 #change-language-btn{
     width: 100px;
     height: 40px;
     background-color: #f2f2f2;
+    padding-left: 20px;
 }
 
 #change-country-btn img{
@@ -913,33 +1054,29 @@ ul {
     margin-right: 10px;
 }
 
-/*footer*/
-.footer {
-    background: #f2f2f2;
-    color: #616161;
-    font-size: 0.8rem;
-    padding: 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: -6000px;
-}
 #ikea-copy {
     width: 50%;
     height: max-content;
+    display: block;
+    padding-left: 80px;
+    margin-top: 20px;
 }
 #ikea-copy p {
     display: inline;
+    font-size: 0.9rem;
 }
 #ikea-policy {
     width: 50%;
     height: max-content;
     margin-top: 0;
     display: block;
+    padding-right: 70px;
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
 #ikea-policy ul {
     float: right;
-    height: 20px;    
+    height: 20px;  
 }
 #ikea-policy ul li {
     padding-right: 20px;
@@ -947,4 +1084,6 @@ ul {
 }
 #ikea-info {
     margin-top: 20px;
+    margin-left: 80px;
+    font-size: 0.9rem;
 }

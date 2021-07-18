@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>38기 진선희(이케아)</title>
     <link rel="stylesheet" href="main.css">
+    <script src="../jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <script>
-    </script>
-<div class="container">
         <header id="header">
-            <nav class="hamburger-nav">
+                <div id="h-btn-d">
+                    <img id="h-btn" src="images/002-menu.svg" alt="">
+                </div>
+                <div onclick="history.back();" class="page_cover"></div>
                 <div class="hamburger-menu-wrap">
-                    <button>취소</button>
+                    <div id="h-btn-c">
+                        <img id="cancel" src="images/009-cancel.svg" alt="">
+                    </div>
                     <a href="https://www.ikea.com/kr/ko/">
                         <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
                     </a> 
@@ -39,38 +42,46 @@
                             <li class=li2>내 프로필</li>
                         </ul>
                     </div>
-                    <div class="h-change-country">   
-                        <button id="h-change-country-btn"><img src="images/001-globe.svg">국가 변경</button>
+                    <div class="h-change-country"> 
                         <select name="language" id="h-change-language-btn">
                             <option value="korean" selected>한국어</option>
                             <option value="english">English</option>
-                        </select>
+                        </select>  
+                        <button id="h-change-country-btn"><img src="images/010-globe.svg">국가 변경</button>
                     </div> 
                 </div>
-            </nav>  
             <div id="header-bar">
-                <p>코로나 19 대응 공지</p>
-                <p>비대면 전화주문 서비스</p>
-                <p>IKEA 인기제품</p>
+                <p><img src="images/info.png" alt=""> 코로나 19 대응 공지</p>
+                <p><img src="images/tel.png" alt=""> 비대면 전화주문 서비스</p>
+                <p><img src="images/bag.png" alt=""> IKEA 인기제품</p>
             </div>                  
-            <nav class="main-nav">
-                <button id="hamburger-menu"><img src="images/free-icon-square-3388829.png" alt=""></button>
-                <a href="https://www.ikea.com/kr/ko/">
-                    <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
-                </a>   
-                <ul>
-                    <li a href="#">모든 제품</li>
-                    <li a href="#">디지털 쇼룸</li>
-                    <li><input type="search" name="search-pro" id="search-pro" placeholder="검색어 입력"></li>
-                    <li><img src="images/004-delivery.svg" alt="배송 조회"></li>
-                    <li><img src="images/006-avatar.svg" alt="내 프로필"></li>
-                    <li><img src="images/003-like.svg" alt="위시리스트"></li>
-                    <li><img src="images/002-shopping-cart.svg" alt="장바구니"></li>
-                </ul>
-            </nav>
-            
+            <div class="main-nav">
+                <div class="logo-d"> 
+                    <a href="https://www.ikea.com/kr/ko/">
+                        <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
+                    </a>
+                </div>
+                <div>  
+                    <ul id="header-list1">
+                        <li>모든 제품</li>
+                        <li>디지털 쇼룸</li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <input type="search" id="search-pro" placeholder="검색어를 입력하세요.">
+                </div>
+                <div>
+                    <ul id="header-list2">
+                        <li><img src="images/001-delivery.svg" alt="배송 조회"></li>
+                        <li><img src="images/005-user.svg" alt="내 프로필"></li>
+                        <li><img src="images/001-heart.svg" alt="위시리스트"></li>
+                        <li><img src="images/003-shopping-bags.svg" alt="장바구니"></li>
+                    </ul>
+                </div>
+            </div>   
         </header>
-        <main>
+
+        <main class="main"> 
                 <section class="sec1">
                     <div id="txt1">
                         <h2>집에서 찾는 일상의 활력</h2>
@@ -90,38 +101,47 @@
                     <h2>진행 중인 이벤트 및 프로모션</h2>
                     <ul class="list">
                         <li  id="sec2-l1">
-                            <div>
-                                <img src="https://www.ikea.com/images/strandmon-eac46c3c1922367860d8b574d3f49b43.jpg?f=m" alt="">
+                            <div class="sec2-content">
+                                <img class="con-img" src="https://www.ikea.com/images/strandmon-eac46c3c1922367860d8b574d3f49b43.jpg?f=m" alt="">
                                 <h2>7월 신제품을 만나보세요</h2>
-                                <p>일상에 활기를 불어넣어 줄 IKEA 신제품을 만나보세요! 원하는 분위기를 만들어 줄 매력적인 제품이 준비되어 있어요.</p>
+                                <p>일상에 활기를 불어넣어 줄 IKEA 신제품을 만나보세요! 원하는 분위기를 만들어 줄 매력적인 제품이 준비되어 있어요. 
+                                    <button class="sec2-btn"></button></p>
                             </div>
-                        </li>
+                            </li>
                         <li  id="sec2-l2">
-                            <div>
-                                <img src="https://www.ikea.com/images/kitchen-library-97c501903bdf9a74e0b9f42b281d020f.jpg?f=s" alt="">
+                            <div class="sec2-content">
+                                <img class="con-img" src="https://www.ikea.com/images/kitchen-library-97c501903bdf9a74e0b9f42b281d020f.jpg?f=s" alt="">
                                 <h2>IKEA 주방 라이브러리</h2>
-                                <p>우리 집에 맞는 IKEA 주방을 단계별로 찾아보세요! 우리집의 주방 구조를 선택하고, 고려 중인 예산 범위에 따라 다양한 디자인의 주방을 확인할 수 있어요. 쉽고 빠르게 IKEA 주방을 만나요!</p>
+                                <p>우리 집에 맞는 IKEA 주방을 단계별로 찾아보세요! 우리집의 주방 구조를 선택하고, 고려 중인 예산 범위에 따라 다양한 디자인의 주방을 확인할 수 있어요. 쉽고 빠르게 IKEA 주방을 만나요!
+                                    <button class="sec2-btn"></button>
+                                </p>
                             </div>
                         </li>
                         <li  id="sec2-l3">
-                            <div>
-                                <img src="https://www.ikea.com/images/-51b525a63ed1c87f52a19f0482dee615.jpg?f=m" alt="">
+                            <div class="sec2-content">
+                                <img class="con-img" src="https://www.ikea.com/images/-51b525a63ed1c87f52a19f0482dee615.jpg?f=m" alt="">
                                 <h2>밤새도록 쾌적하게</h2>
-                                <p>쿨잠과 꿀잠 모두를 만족시키는 인체공학적인 베개로 밤새도록 쾌적한 수면을 즐기세요.</p>
+                                <p>쿨잠과 꿀잠 모두를 만족시키는 인체공학적인 베개로 밤새도록 쾌적한 수면을 즐기세요.
+                                    <button class="sec2-btn"></button>
+                                </p>
                             </div>
                         </li>
                         <li  id="sec2-l4">
-                            <div>
-                                <img src="https://www.ikea.com/images/44/03/4403db9bf72ea0950a23e99995af4c04.jpg?f=m" alt="">
+                            <div class="sec2-content">
+                                <img class="con-img" src="https://www.ikea.com/images/44/03/4403db9bf72ea0950a23e99995af4c04.jpg?f=m" alt="">
                                 <h2>7월 22일 오후 4시 IKEA Live</h2>
-                                <p>소파를 고를 때 여러분은 어떤 것을 가장 먼저 고려하시나요? 나에게 맞는 소파를 구매하는 방법에 대한 팁과 아이디어를 드려요!</p>
+                                <p>소파를 고를 때 여러분은 어떤 것을 가장 먼저 고려하시나요? 나에게 맞는 소파를 구매하는 방법에 대한 팁과 아이디어를 드려요!
+                                    <button class="sec2-btn"></button>
+                                </p>
                             </div>
                         </li>
                         <li  id="sec2-l5">
-                            <div>
-                                <img src="https://www.ikea.com/images/fy22-l1-8ce1479d08d77c3528df84fb93057f51.jpg?f=s" alt="">
+                            <div class="sec2-content">
+                                <img class="con-img" src="https://www.ikea.com/images/fy22-l1-8ce1479d08d77c3528df84fb93057f51.jpg?f=s" alt="">
                                 <h2>홈퍼니싱 솔루션</h2>
-                                <p>IKEA가 제안하는 한 박자 빠른 시즈널 홈퍼니싱을 아래에서 확인해보세요.</p>
+                                <p>IKEA가 제안하는 한 박자 빠른 시즈널 홈퍼니싱을 아래에서 확인해보세요.
+                                    <button class="sec2-btn"></button>
+                                </p>
                             </div>
                         </li>
                     </ul>
@@ -146,6 +166,7 @@
                                 <p class="item-price">\ 89,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
@@ -158,6 +179,7 @@
                                 <p class="item-price">\ 149,000</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
@@ -170,26 +192,31 @@
                                 <p class="item-price">\ 89,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
                             <img src="https://www.ikea.com/kr/ko/images/products/kolbjoern-cabinet-in-outdoor-green__0762731_pe752182_s5.jpg?f=s" alt="">
                             <div class="item-info">
+                                &nbsp;
                                 <p class="item-name">KOLBJÖRN 콜비에른</p>
                                 <p class="item-type">수납장,실내외겸용, 80x81 cm</p>
                                 <p class="item-price">\ 99,000</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
                             <img src="https://www.ikea.com/kr/ko/images/products/ikea-ps-cabinet-white__0644741_pe702929_s5.jpg?f=s" alt="">
                             <div class="item-info">
+                                &nbsp;
                                 <p class="item-name">IKEA PS</p>
                                 <p class="item-type">수납장, 119x63 cm</p>
                                 <p class="item-price">\ 54,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
@@ -201,6 +228,7 @@
                                 <p class="item-price new">\ 18,000</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
@@ -213,46 +241,55 @@
                                 <p class="item-price">\ 59,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
                             <img src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-2-drawers-grey-green__0729042_pe738505_s5.jpg?f=s" alt="">
                             <div class="item-info">
+                                &nbsp;
                                 <p class="item-name">NIKKEBY 니케뷔</p>
                                 <p class="item-type">2칸서랍장, 46x70 cm</p>
                                 <p class="item-price">\ 89,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
                             <img src="https://www.ikea.com/kr/ko/images/products/ikea-ps-cabinet-blue__0644742_pe702930_s5.jpg?f=s" alt="">
                             <div class="item-info">
+                                &nbsp;
                                 <p class="item-name">IKEA PS</p>
                                 <p class="item-type">수납장, 119x63 cm</p>
                                 <p class="item-price">\ 54,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
                             <img src="https://www.ikea.com/kr/ko/images/products/ivar-cabinet-with-doors-green-mesh__0945011_pe797528_s5.jpg?f=s" alt="">
                             <div class="item-info">
+                                &nbsp;
                                 <p class="item-name">IVAR 이바르</p>
                                 <p class="item-type">도어수납장, 80x83 cm</p>
                                 <p class="item-price">\ 130,000</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
                             <img src="https://www.ikea.com/kr/ko/images/products/lixhult-cabinet-metal-grey__0644746_pe702934_s5.jpg?f=s" alt="">
                             <div class="item-info">
+                                &nbsp;
                                 <p class="item-name">LIXHULT 릭스훌트</p>
                                 <p class="item-type">수납장, 60x35 cm</p>
                                 <p class="item-price">\ 32,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     <li>
                         <div class="item">
@@ -265,6 +302,7 @@
                                 <p class="item-price">\ 49,900</p>
                             </div>
                         </div>
+                        <button></button>
                     </li>
                     
                 </ul>
@@ -291,7 +329,7 @@
                     <li>
                         <div class="solution-title">
                             <p>집에서 지속가능한 생활을 실천할 수 있는 아이디어</p>
-                            <button>-></button>
+                            <button></button>
                         </div>
                     </li>
                     <li>
@@ -351,13 +389,13 @@
                     <p><img src="./images/001-delivery.svg" alt=""></p>
                     <h4>배송 서비스</h4>
                     <p>편리한 배송 옵션을 살펴보세요.</p>
-                    <p class="more-opt">더보기</p>
+                    <p class="more-opt">더 보기</p>
                 </div>
                 <div id="a-service">
                     <p><img src="./images/002-automation.svg" alt=""></p>
                     <h4>조립 서비스</h4>
                     <p>IKEA에게 조립을 맡기고 소중한 시간을 아끼세요.</p>
-                    <p class="more-opt">더보기</p>
+                    <p class="more-opt">더 보기</p>
                 </div>
             </section>
             <section class="sec9">
@@ -389,38 +427,30 @@
                     <div id="sec9-item12"></div>
                 </div>
                 <button id="more-btn">12개 더 보기</button>
-                <div class="sec9-more">
-                    <div id="sec9-item13"></div>
-                    <div id="sec9-item14"></div>
-                    <div id="sec9-item15"></div>
-                    <div id="sec9-item16"></div>
-                    <div id="sec9-item17"></div>
-                    <div id="sec9-item18"></div>
-                    <div id="sec9-item19"></div>
-                    <div id="sec9-item20"></div>
-                    <div id="sec9-item21"></div>
-                    <div id="sec9-item22"></div>
-                    <div id="sec9-item23"></div>
-                    <div id="sec9-item24"></div>
-                </div>
             </section>  
             <section class="sec10">
                 <div class="sec10-all">
                     <div class="sec10-d1">
                         <img src="https://www.ikea.com/images/c7/b4/c7b491ba0ec7b9cafa5eedfbed845c39.jpg?f=m" alt="">
                         <h2>코로나 19 대응 공지</h2>
+                        <button class="sec10-btn"><img src="./images/002-right-arrow.svg" alt=""></button>
                     </div>
                     <div class="sec10-d2">
                         <img src="https://www.ikea.com/images/e1/d6/e1d6e4c0f433aeaa8b44e502da8c0781.jpg?f=m" alt="">
                         <h2>제품리콜</h2>
+                        <button class="sec10-btn"><img src="./images/002-right-arrow.svg" alt=""></button>
                     </div>
                     <div class="sec10-d3">
                         <img src="https://www.ikea.com/images/d7/4b/d74b0bd851ac204744da1397f84f21e5.jpg?f=m" alt="">
                         <h2>안전사고 예방 방법</h2>
+                        <button class="sec10-btn"><img src="./images/002-right-arrow.svg" alt=""></button>
                     </div>
                 </div>
             </section>
-            <section class="links">
+        </main>
+    
+    <footer class="footer">
+        <div class="links">
                 <div class="join-fam">
                     <h2>IKEA Family</h2>
                     <p>지금 IKEA Family에 무료로 가입하고<br> 다양한 멤버 전용 혜택을 누리세요.<span>자세히 보기</span></p>
@@ -473,46 +503,47 @@
                 </div>
                 <div class="linkurl">
                     <a href="https://facebook.com">
-                        <img src="images/001-facebook.svg" alt="">
+                        <img src="images/007-facebook.svg" alt="">
                     </a>
                     <a href="https://instagram.com">
-                        <img src="images/005-instagram.svg" alt="">
+                        <img src="images/004-instagram.svg" alt="">
                     </a>
                     <a href="https://youtube.com">
-                        <img src="images/007-youtube.svg" alt="">
+                        <img src="images/008-youtube.svg" alt="">
                     </a>
                 </div>
                 <div class="change-country">   
-                    <button id="change-country-btn"><img src="images/001-globe.svg">국가 변경</button>
+                    <button id="change-country-btn"><img src="images/010-globe.svg">국가 변경</button>
                     <select name="language" id="change-language-btn">
                         <option value="korean" selected>한국어</option>
                         <option value="english">English</option>
                     </select>
-                </div>       
-            </section>   
-        </main>
+                </div>
+            </div>
+        <div id="ikea-copy">
+            <P>ⓒInter IKEA Systems B.V 1999-2021</P>
+        </div>
+        <div id="ikea-policy">
+            <ul>
+                <li>개인정보처리방침</li>
+                <li>쿠키정책</li>
+                <li>웹사이트 이용약관</li>
+                <li>Responsible disclosure</li>
+            </ul>
+        </div>
+        <div id="ikea-info">
+            <P>IKEA 코리아</P>
+            <address>주소: (우)143352 경기도 광명시 일직로 17 IKEA광명점</address>
+            <p>사업자 등록번호: 106-86-82871<a href="#">사업자정보확인</a></p>
+            <p>대표자: 프레드릭 요한손</p>
+            <p> 통신판매업 신고: 2018-경기광명-0209</p>
+            <p>TEL: 1670-4532</p>
+        </div> 
+    </footer>
 
-        <footer class="footer">
-            <div id="ikea-copy">
-                <P>ⓒInter IKEA Systems B.V 1999-2021</P>
-            </div>
-            <div id="ikea-policy">
-                <ul>
-                    <li>개인정보처리방침</li>
-                    <li>쿠키정책</li>
-                    <li>웹사이트 이용약관</li>
-                    <li>Responsible disclosure</li>
-                </ul>
-            </div>
-            <div id="ikea-info">
-                <P>IKEA 코리아</P>
-                    <address>주소: (우)143352 경기도 광명시 일직로 17 IKEA광명점</address>
-                    <p>사업자 등록번호: 106-86-82871<a href="#">사업자정보확인</a></p>
-                    <p>대표자: 프레드릭 요한손</p>
-                    <p> 통신판매업 신고: 2018-경기광명-0209</p>
-                    <p>TEL: 1670-4532</p>
-            </div>
-        </footer>
-        
-    </div>
+    <script src="./main.js"></script>
+    <script>
+       
+    </script>
 </body>
+
