@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>38기 진선희(이케아)</title>
     <link rel="stylesheet" href="main.css">
-    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
         <header id="header">
@@ -99,6 +100,8 @@
 
                 <section class="sec2">
                     <h2>진행 중인 이벤트 및 프로모션</h2>
+                    <div class="btn-left"  onclick="mouseScrollLeft()"></div>
+                    <div class="btn-right"  onclick="mouseScrollRight()"></div>
                     <ul class="list">
                         <li  id="sec2-l1">
                             <div class="sec2-content">
@@ -154,10 +157,12 @@
                 </article>
                 <section class="sec3">
                 <h2>추천제품</h2>
+                <div class="r-btn-left" onclick="mouseScrollLeft2()"></div>
+                <div class="r-btn-right" onclick="mouseScrollRight2()"></div>
                 <ul class="recommend">
                     <li>
-                        <div class="item">
-                            <img src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-4-drawers-grey-green__0729044_pe738503_s5.jpg?f=s" alt="">
+                        <div class="item" id="item1">
+                            <img id="item1-img" src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-4-drawers-grey-green__0729044_pe738503_s5.jpg?f=s">
                             <div class="item-info">
                                 <span>더 낮은 새로운 가격</span>
                                 <p class="item-name">NIKKEBY 니케뷔</p>
@@ -450,6 +455,8 @@
         </main>
     
     <footer class="footer">
+        <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
+            <img src="images/001-up-arrow.svg" width="25px" height="25px"></div>
         <div class="links">
                 <div class="join-fam">
                     <h2>IKEA Family</h2>

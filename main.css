@@ -188,7 +188,7 @@ ul {
     font-weight: bold;
 }
 #search {
-    width: 50%;
+    width: 700px;
     height: auto;
     margin-right: 10px;
         
@@ -201,10 +201,13 @@ ul {
     background-color: #ecececc2;
     color: black;
     padding-left: 20px;
+    display: block;
 }
 #header-list2 {
-    display: flex;
-    flex-direction: row;
+    display: block;
+}
+#header-list2 li {
+    display: inline-block;
 }
 #header-list2 li img{
     width: 24px;
@@ -282,19 +285,37 @@ ul {
 .sec2 {
     max-width: 1350px;
     height: 800px;
-    margin-left: 100px
+    margin-left: 100px;
+    position: relative;
 }
 
 .sec2 h2 {
     padding-left: 60px;
     margin-bottom: 20px;
 }
+.btn-left, .r-btn-left {
+    width: 50px;
+    height: 50px;
+    background: url("images/previous.svg");
+    position: absolute;
+    bottom: 350px;
+    left: 0;
+} 
+.btn-right, .r-btn-right {
+    width: 50px;
+    height: 50px;
+    background: url("images/003-next.svg");
+    position: absolute;
+    bottom: 350px;
+    right: 30px;
+} 
 .list {
     overflow-x:scroll; 
     white-space:nowrap;
     margin-left: 60px;
     height: 700px;
     max-width: 1200px;
+    scroll-behavior: smooth;
 }
 /*list의 스크롤 디자인*/
 .list::-webkit-scrollbar {
@@ -399,6 +420,7 @@ ul {
     max-width: 1350px;
     height: 700px;
     margin-left: 100px;
+    position: relative;
 }
 
 .sec3 h2 {
@@ -414,6 +436,7 @@ ul {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    scroll-behavior: smooth;
 }
 .recommend::-webkit-scrollbar {
     height: 4px;
@@ -919,7 +942,7 @@ ul {
 .sec10-all img{
     width: 400px;
     height: 400px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .sec10-btn {
     width: 50px;
@@ -936,16 +959,23 @@ ul {
 .sec10-btn:hover {
     opacity: 0.8;
 }
-
+/*footer*/
 .footer {
     max-width: 1600px;
     height: 700px;
     background-color: #f1f1f1;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
+#scrollTopPc {
+    display: none;
+    position: fixed;
+    bottom: 64px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 99;
+  }
 /*section links*/
 .links {
     width: 1600px;
