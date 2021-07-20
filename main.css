@@ -145,7 +145,6 @@ ul {
     flex-direction: row;
     color: #fff;
     justify-content: center;
-    flex-wrap: wrap;
 }
 #header-bar p {
     margin-right: 50px;
@@ -204,10 +203,10 @@ ul {
     display: block;
 }
 #header-list2 {
-    display: block;
+    display: flex;
 }
 #header-list2 li {
-    display: inline-block;
+    display: block;
 }
 #header-list2 li img{
     width: 24px;
@@ -224,7 +223,7 @@ ul {
 }
 /*section1*/
 .sec1 {
-    max-width: 1300px;
+    width: 1300px;
     height: 850px;
     margin-left: 100px
 }
@@ -308,7 +307,10 @@ ul {
     position: absolute;
     bottom: 350px;
     right: 30px;
-} 
+}
+.btn-left:hover, .r-btn-left:hover,.btn-right:hover, .r-btn-right:hover {
+    opacity: 0.8;
+}
 .list {
     overflow-x:scroll; 
     white-space:nowrap;
@@ -381,12 +383,12 @@ ul {
     background-size: cover;
     background-color: white;
 }
-
-
 .sec2-content button:hover {
     opacity: 0.8;
 }
-
+.sec2-content:hover > h2 {
+    text-decoration: underline;
+}
 
 #sec2-l2 {
     background-color: #f49778;
@@ -474,11 +476,11 @@ ul {
     padding-bottom: 5px;
 }
 .recommend li button {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    bottom: 30px;
-    right: 40px;
+    bottom: 50px;
+    right: 60px;
     border: none;
     background: url("./images/003-add-to-cart.svg") center no-repeat;
     background-size: cover;
@@ -514,7 +516,7 @@ ul {
 
 /*section4*/
 .sec4 {
-    max-width: 1350px;
+    width: 1350px;
     height: 1000px;
     margin-top: 50px;
 }
@@ -540,6 +542,7 @@ ul {
     height: 900px;
     display: inline-block;
     margin-left: 60px;
+    position: relative;
 }
 #sec4-img1, #sec4-img2{
     width: 48%;
@@ -547,10 +550,67 @@ ul {
     margin-right: 20px;
     margin-top: 20px;
 }
+#new-tag1 {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    position: absolute;
+    z-index: 50;
+    bottom: 350px;
+    left: 250px;
+    background-color: white;
+}
+#new-tag1-s {
+    width: 120px;
+    height: 100px;
+    border : 1px solid #ccc;
+    position: absolute;
+    z-index: 50;
+    bottom : 310px;
+    left: 280px;
+    background-color: white;   
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: none;
+}
+#new-tag1-s span, #new-tag2-s span {
+    font-weight: bold;
+    color: rgb(187, 45, 45);
+}
+#new-tag1-s:nth-child(3), #new-tag2-s:nth-child(3){
+    color: #262626;
+}
+#new-tag2 {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 45px;
+    position: absolute;
+    z-index: 50;
+    top: 200px;
+    right: 300px;
+    background-color: white;
+}
+#new-tag2-s {
+    width: 120px;
+    height: 100px;
+    border : 1px solid #ccc;
+    position: absolute;
+    z-index: 50;
+    top : 160px;
+    right: 160px;
+    background-color: white;   
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: none;
+}
 
 /*section5*/
 .sec5 {
-    max-width: 1350px;
+    width: 1350px;
     height: 1000px;
 }
 .sec5 h2 {
@@ -714,7 +774,7 @@ ul {
 
 /*section7*/
 .sec7 {
-    max-width: 1350px;
+    width: 1350px;
     height: 500px;
     margin-top: 50px;
     margin-left: 20px;
@@ -961,7 +1021,7 @@ ul {
 }
 /*footer*/
 .footer {
-    max-width: 1600px;
+    width: 1600px;
     height: 700px;
     background-color: #f1f1f1;
     display: flex;
@@ -975,8 +1035,21 @@ ul {
     left: 30px;
     cursor: pointer;
     z-index: 99;
+    background-color: #f1f1f1;
+    width: 40px;
+    height: 40px;
+    border-radius: 45px;
+    padding-top: 8px;
+    padding-left: 10px;
+    overflow: hidden;
+    font-size: 0.8rem;
   }
-/*section links*/
+  #scrollTopPc:hover {
+      width: 130px;
+      height: 40px;
+      background-color: #f1f1f1;
+      transition: 0.3s ease-out;
+  }
 .links {
     width: 1600px;
     height: 500px;
