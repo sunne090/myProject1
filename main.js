@@ -3,10 +3,12 @@
 $("#h-btn-d").click(function() { 
     $(".hamburger-menu-wrap,.page_cover").addClass("open"); 
 }); 
+$("#h-btn-d2").click(function() { 
+    $(".hamburger-menu-wrap,.page_cover").addClass("open"); 
+}); 
 $("#cancel").click(function() { 
     $(".hamburger-menu-wrap,.page_cover").removeClass("open"); 
 });
-
 
 
 // scroll-top이벤트
@@ -35,6 +37,13 @@ function mouseScrollRight2() {
 };
 function mouseScrollLeft2() {
     document.querySelector('.recommend').scrollBy(-800, 0);
+};
+// section6 좌우스크롤 이벤트
+function mouseScrollRight3() {
+    document.querySelector('.solution').scrollBy(500, 0);
+};
+function mouseScrollLeft3() {
+    document.querySelector('.solution').scrollBy(-500, 0);
 };
 
 
@@ -162,6 +171,7 @@ document.querySelector("#item12").addEventListener("mouseout",function(){
 });
 
 // 이미지 마우스오버 시 태그 나타내기
+//section4
 document.getElementById("new-tag1").addEventListener("mouseover",function(){
     document.getElementById("new-tag1-s").style.display = "block";
     this.style.backgroundColor = "#ccc";   
@@ -176,5 +186,55 @@ document.getElementById("new-tag2").addEventListener("mouseover",function(){
 });
 document.getElementById("new-tag2").addEventListener("mouseout",function(){
     document.getElementById("new-tag2-s").style.display = "none";
+    this.style.backgroundColor = "#fff"; 
+});
+
+//section5
+document.getElementById("kid-tag1").addEventListener("mouseover",function(){
+    document.getElementById("kid-tag1-s").style.display = "block";
+    this.style.backgroundColor = "#ccc";   
+});
+document.getElementById("kid-tag1").addEventListener("mouseout",function(){
+    document.getElementById("kid-tag1-s").style.display = "none";
+    this.style.backgroundColor = "#fff"; 
+});
+document.getElementById("kid-tag2").addEventListener("mouseover",function(){
+    document.getElementById("kid-tag2-s").style.display = "block";
+    this.style.backgroundColor = "#ccc";   
+});
+document.getElementById("kid-tag2").addEventListener("mouseout",function(){
+    document.getElementById("kid-tag2-s").style.display = "none";
+    this.style.backgroundColor = "#fff"; 
+});
+document.getElementById("kid-tag3").addEventListener("mouseover",function(){
+    document.getElementById("kid-tag3-s").style.display = "block";
+    this.style.backgroundColor = "#ccc";   
+});
+document.getElementById("kid-tag3").addEventListener("mouseout",function(){
+    document.getElementById("kid-tag3-s").style.display = "none";
+    this.style.backgroundColor = "#fff"; 
+});
+document.getElementById("kid-tag4").addEventListener("mouseover",function(){
+    document.getElementById("kid-tag4-s").style.display = "block";
+    this.style.backgroundColor = "#ccc";   
+});
+document.getElementById("kid-tag4").addEventListener("mouseout",function(){
+    document.getElementById("kid-tag4-s").style.display = "none";
+    this.style.backgroundColor = "#fff"; 
+});
+document.getElementById("kid-tag5").addEventListener("mouseover",function(){
+    document.getElementById("kid-tag5-s").style.display = "block";
+    this.style.backgroundColor = "#ccc";   
+});
+document.getElementById("kid-tag5").addEventListener("mouseout",function(){
+    document.getElementById("kid-tag5-s").style.display = "none";
+    this.style.backgroundColor = "#fff"; 
+});
+document.getElementById("kid-tag6").addEventListener("mouseover",function(){
+    document.getElementById("kid-tag6-s").style.display = "block";
+    this.style.backgroundColor = "#ccc";   
+});
+document.getElementById("kid-tag6").addEventListener("mouseout",function(){
+    document.getElementById("kid-tag6-s").style.display = "none";
     this.style.backgroundColor = "#fff"; 
 });

@@ -1,0 +1,161 @@
+@media screen and (max-width : 1200px) {
+    body {
+        overflow-x: auto;
+    }
+    .header {
+        width: 820px;
+    }
+    .main-nav {
+        margin-left: 30px;
+    }
+    #header-list2 li:nth-child(1){
+        display: none;
+    }
+    #header-list2 li:nth-child(5){
+        display: block;
+    }
+    #h-btn-d, #h-btn {
+        display: none;
+    }
+    .sec1 {
+        height: 700px;
+        margin-left: 30px;
+    }
+    .btn-left, .btn-right, .r-btn-left, .r-btn-right, .s-btn-left, .s-btn-right {
+        display: none;
+    }
+    .sec2 {
+        margin-left: 30px;
+        width: 90%;
+        height: 680px;
+    }
+    .list li, .sec2-content {
+        width: 300px;
+        height: 600px;
+    }
+    .con-img {
+        height: 300px;
+    }
+    .list li p {
+        bottom: 90px;
+    }
+    .sec2-btn{
+        bottom: -60px;
+    }
+    .list {
+        height: 620px;
+    }
+    #delivery-problem {
+        margin-left: 90px;    
+    }
+    .sec3 {
+        margin-left: 30px;
+    }
+    .recommend {
+         height: 500px;
+    }
+    .item {
+        width: 250px;
+        height: 480px;
+    }
+    .item img {
+        width: 250px;
+        height: 270px;
+    }
+    .sec4 {
+        height: 750px;
+    }
+    #sec4-img1, #sec4-img2 {
+        max-height: 600px;
+    }
+    .new-product {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #new-tag1 {
+        bottom: 500px;
+        left: 180px;
+    }
+    #new-tag1-s {
+        bottom : 460px;
+        left:  200px;   
+    }
+    #new-tag2 {
+        top: 140px;
+        right: 250px;
+    }
+    #new-tag2-s {
+        top : 120px;
+        right: 110px;
+    }
+    .sec5 {
+        height: 750px;
+    }
+    #sec5-img1, #sec5-img2 {
+        max-height: 600px;
+    }
+    .refresh-product {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #kid-tag1 {
+        top: 150px;
+        left: 200px;
+    }
+    #kid-tag1-s {
+        top : 100px;
+        left: 230px;
+    }
+    #kid-tag2 {
+        top: 500px;
+        left: 250px;
+    }
+    #kid-tag2-s {
+        width: 160px;
+        height: 110px;
+        top : 450px;
+        left: 280px;
+    }
+    #kid-tag3 {
+        bottom: 150px;
+        left: 450px;
+    }
+    #kid-tag3-s {
+        width: 160px;
+        height: 110px;
+        bottom : 100px;
+        left: 270px;
+    }
+    #kid-tag4 {
+        top: 120px;
+        right: 350px;
+    }
+    #kid-tag4-s {
+        width: 160px;
+        height: 90px;
+        top : 80px;
+        right: 380px;
+    }
+    #kid-tag5 {
+        top: 350px;
+        right: 380px;
+    }
+    #kid-tag5-s {
+        width: 160px;
+        height: 100px;
+        top : 320px;
+        right: 410px;
+    }
+    #kid-tag6 {
+        top: 280px;
+        right: 180px;
+    }
+    #kid-tag6-s {
+        width: 160px;
+        height: 120px;
+        top : 320px;
+        right: 90px;
+    }
+}

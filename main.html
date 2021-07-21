@@ -6,11 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>38기 진선희(이케아)</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main-page.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
         <header id="header">
+                
+            <div id="header-bar">
+                <p><img src="images/info.png" alt=""> 코로나 19 대응 공지</p>
+                <p><img src="images/tel.png" alt=""> 비대면 전화주문 서비스</p>
+                <p><img src="images/bag.png" alt=""> IKEA 인기제품</p>
+            </div>                  
+            <div class="main-nav">
+                
+                <div class="logo-d"> 
+                    <a href="https://www.ikea.com/kr/ko/">
+                        <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
+                    </a>
+                </div>
+                <div>  
+                    <ul id="header-list1">
+                        <li>모든 제품</li>
+                        <li>디지털 쇼룸</li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <input type="search" id="search-pro" placeholder="검색어를 입력하세요.">
+                    <img id="loupe" src="images/loupe.svg" alt="">
+                    <img id="camera" src="images/camera.svg" alt="">
+                </div>
+                <div>
+                    <ul id="header-list2">
+                        <li><img src="images/001-delivery.svg" alt="배송 조회"></li>
+                        <li><img src="images/005-user.svg" alt="내 프로필"></li>
+                        <li><img src="images/001-heart.svg" alt="위시리스트"></li>
+                        <li><img src="images/003-shopping-bags.svg" alt="장바구니"></li>
+                        <li>
+                            <div id="h-btn-d2">
+                                <img id="h-btn2" src="images/002-menu.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div id="h-btn-d">
                     <img id="h-btn" src="images/002-menu.svg" alt="">
                 </div>
@@ -51,34 +89,6 @@
                         <button id="h-change-country-btn"><img src="images/010-globe.svg">국가 변경</button>
                     </div> 
                 </div>
-            <div id="header-bar">
-                <p><img src="images/info.png" alt=""> 코로나 19 대응 공지</p>
-                <p><img src="images/tel.png" alt=""> 비대면 전화주문 서비스</p>
-                <p><img src="images/bag.png" alt=""> IKEA 인기제품</p>
-            </div>                  
-            <div class="main-nav">
-                <div class="logo-d"> 
-                    <a href="https://www.ikea.com/kr/ko/">
-                        <img id="logo" src="https://www.ikea.com/kr/ko/static/ikea-logo.b1683cbaa3026b6b7a6d.svg" alt="">
-                    </a>
-                </div>
-                <div>  
-                    <ul id="header-list1">
-                        <li>모든 제품</li>
-                        <li>디지털 쇼룸</li>
-                    </ul>
-                </div>
-                <div id="search">
-                    <input type="search" id="search-pro" placeholder="검색어를 입력하세요.">
-                </div>
-                <div>
-                    <ul id="header-list2">
-                        <li><img src="images/001-delivery.svg" alt="배송 조회"></li>
-                        <li><img src="images/005-user.svg" alt="내 프로필"></li>
-                        <li><img src="images/001-heart.svg" alt="위시리스트"></li>
-                        <li><img src="images/003-shopping-bags.svg" alt="장바구니"></li>
-                    </ul>
-                </div>
             </div>   
         </header>
 
@@ -103,7 +113,7 @@
                     <div class="btn-left"  onclick="mouseScrollLeft()"></div>
                     <div class="btn-right"  onclick="mouseScrollRight()"></div>
                     <ul class="list">
-                        <li  id="sec2-l1">
+                        <li id="sec2-l1">
                             <div class="sec2-content">
                                 <img class="con-img" src="https://www.ikea.com/images/strandmon-eac46c3c1922367860d8b574d3f49b43.jpg?f=m" alt="">
                                 <h2>7월 신제품을 만나보세요</h2>
@@ -111,7 +121,7 @@
                                     <button class="sec2-btn"></button></p>
                             </div>
                             </li>
-                        <li  id="sec2-l2">
+                        <li id="sec2-l2">
                             <div class="sec2-content">
                                 <img class="con-img" src="https://www.ikea.com/images/kitchen-library-97c501903bdf9a74e0b9f42b281d020f.jpg?f=s" alt="">
                                 <h2>IKEA 주방 라이브러리</h2>
@@ -120,7 +130,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li  id="sec2-l3">
+                        <li id="sec2-l3">
                             <div class="sec2-content">
                                 <img class="con-img" src="https://www.ikea.com/images/-51b525a63ed1c87f52a19f0482dee615.jpg?f=m" alt="">
                                 <h2>밤새도록 쾌적하게</h2>
@@ -129,7 +139,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li  id="sec2-l4">
+                        <li id="sec2-l4">
                             <div class="sec2-content">
                                 <img class="con-img" src="https://www.ikea.com/images/44/03/4403db9bf72ea0950a23e99995af4c04.jpg?f=m" alt="">
                                 <h2>7월 22일 오후 4시 IKEA Live</h2>
@@ -138,7 +148,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li  id="sec2-l5">
+                        <li id="sec2-l5">
                             <div class="sec2-content">
                                 <img class="con-img" src="https://www.ikea.com/images/fy22-l1-8ce1479d08d77c3528df84fb93057f51.jpg?f=s" alt="">
                                 <h2>홈퍼니싱 솔루션</h2>
@@ -316,16 +326,16 @@
                 <button>신제품 보러가기</button>
                 <div class="new-product">
                     <img id="sec4-img1" src="https://www.ikea.com/ext/ingkadam/m/1ac5c8c09d1f448d/original/PH178097.jpg?f=xl" alt="">
-                    <div id="new-tag1"></div>
-                    <div id="new-tag1-s">
+                    <div id="new-tag1" class="tag-btn"></div>
+                    <div id="new-tag1-s" class="tag">
                         <span>NEW</span>
                         <P>SIESJÖN 시에셴</P>
                         <p>바스타올</p>
                         <p>\6,900</p>
                     </div>
                     <img id="sec4-img2" src="https://www.ikea.com/ext/ingkadam/m/1e6dde697e4d6397/original/PH178096.jpg?f=xl" alt="">
-                    <div id="new-tag2"></div>
-                    <div id="new-tag2-s">
+                    <div id="new-tag2" class="tag-btn"></div>
+                    <div id="new-tag2-s" class="tag">
                         <span>NEW</span>
                         <P>SIESJÖN 시에셴</P>
                         <p>세면타올</p>
@@ -334,16 +344,59 @@
                 </div>
             </section>
             <section class="sec5">
-                <h2>편안한 일상과 재충전</h2>
-                <p>편안한 소파베드와 새 이불커버로 한껏 편안한 휴식으로 재충전의 시간을 가져보세요. 이불커버는 내 피부를 밤새 뽀송뽀송하도록 지켜준답니다.</p>
-                <button>침구 보러가기</button>
+                <h2>귀여움이 가득한 아이의 침실</h2>
+                <p id="sec5-p">사랑스러운 아이의 달콤한 꿈을 위해 귀여운 고양이 친구를 초대해 보세요. 부드러운 느낌의 침대 텍스타일은 아이가 깊은 잠을 잘 수 있도록 도와줍니다.</p>
+                <button>새로운 어린이 제품 보러가기</button>
                 <div class="refresh-product">
-                    <img id="sec5-img1" src="https://www.ikea.com/ext/ingkadam/m/7ece4e71dc12c8b8/original/PH177651.jpg?f=xl" alt="">
-                    <img id="sec5-img2" src="https://www.ikea.com/ext/ingkadam/m/38b7208f30a0a022/original/PH177656.jpg?f=xl" alt="">
+                    <img id="sec5-img1" alt="" src="https://www.ikea.com/ext/ingkadam/m/40fd319e6cc40b70/original/PH177659.jpg?f=xl">
+                    <div id="kid-tag1" class="tag-btn"></div>
+                    <div id="kid-tag1-s" class="tag">
+                        <span>NEW</span>
+                        <P>MINNEN 민넨</P>
+                        <p>길이조절침대</p>
+                        <p>\129,000</p>
+                    </div>
+                    <div id="kid-tag2" class="tag-btn"></div>
+                    <div id="kid-tag2-s" class="tag">
+                        <span>NEW</span>
+                        <P>BARNDRÖM 바른드룀</P>
+                        <p>쿠션+포켓</p>
+                        <p>\12,900</p>
+                    </div>
+                    <div id="kid-tag3" class="tag-btn"></div>
+                    <div id="kid-tag3-s" class="tag">
+                        <span>NEW</span>
+                        <P>BARNDRÖM 바른드룀</P>
+                        <p>이불커버+베개커버</p>
+                        <p>\17,900</p>
+                    </div>
+                    <img id="sec5-img2" alt="" src="https://www.ikea.com/ext/ingkadam/m/4cc8951925fc51cf/original/PH177663.jpg?f=xl">
+                    <div id="kid-tag4" class="tag-btn"></div>
+                    <div id="kid-tag4-s" class="tag">
+                        <P>KÄPPHÄST 솁헤스트</P>
+                        <p>쿠션</p>
+                        <p>\19,900</p>
+                    </div>
+                    <div id="kid-tag5" class="tag-btn"></div>
+                    <div id="kid-tag5-s" class="tag">
+                        <span>NEW</span>
+                        <P>VÄNKRETS 벵크렛스</P>
+                        <p>이불커버+베개커버</p>
+                        <p>\24,900</p>
+                    </div>
+                    <div id="kid-tag6" class="tag-btn"></div>
+                    <div id="kid-tag6-s" class="tag">
+                        <span>NEW</span>
+                        <P>VANDRING HARE 반드링 하레</P>
+                        <p>봉제인형</p>
+                        <p>\9,900</p>
+                    </div>
                 </div>
             </section>
-            <section6 class="sec6">
+            <section class="sec6">
                 <h2>지속가능한 내일을 위한 솔루션</h2>
+                <div class="s-btn-left" onclick="mouseScrollLeft3()"></div>
+                <div class="s-btn-right" onclick="mouseScrollRight3()"></div>
                 <ul class="solution">
                     <li>
                         <div class="solution-title">

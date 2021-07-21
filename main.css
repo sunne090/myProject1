@@ -10,7 +10,7 @@ body {
     color: #111;
     font-size: 15px;
     line-height: 1.5;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 a {
     color: #262626;
@@ -22,6 +22,7 @@ ul {
 
 
 /*header*/
+
 /*hamburger-menu*/
 #h-btn-d {
     position: fixed;
@@ -32,13 +33,19 @@ ul {
     border-radius: 45px;
     background-color: white;
 }
-#h-btn, #cancel {
+#h-btn-d2 {
+    width: 40px;
+    height:40px;
+    border-radius: 45px;
+    background-color: white;
+}
+#h-btn, #cancel, #h-btn2 {
     margin-left: 10px;
     margin-top: 10px;
     width: 20px;
     height: 20px;
 }
-#h-btn-d:hover , #h-btn-c:hover {
+#h-btn-d:hover , #h-btn-c:hover,#h-btn-d2:hover, #h-btn2:hover {
     background-color: #dddddd;
 }
 .hamburger-menu-wrap {
@@ -47,7 +54,7 @@ ul {
     top:0;
     z-index: 999;
     width: 350px;
-    height: 900px;
+    height: 1000px;
     background-color: white;
     margin-top: 0;
     transition: all 0.2s ease;
@@ -57,6 +64,8 @@ ul {
 }
 .page_cover.open { 
     display: block; 
+    transition: left 0.5s ease-out;
+    z-index:100;
 } 
 .page_cover { 
     width: 100%; 
@@ -138,7 +147,7 @@ ul {
 
 /*header-bar-menu*/
 #header-bar {
-    max-width: 1600px;
+    width: 100%;
     height: 30px;
     background-color: #111;
     display: flex;
@@ -159,7 +168,7 @@ ul {
 /*header-nav*/
 .main-nav {
     display: flex;
-    max-width: 1350px;
+    width: 90%;
     height: 80px;
     font-size: 1.2em;
     align-items: center;
@@ -187,20 +196,42 @@ ul {
     font-weight: bold;
 }
 #search {
-    width: 700px;
+    width: 45%;
     height: auto;
-    margin-right: 10px;
-        
+    margin-right: 10px; 
+    position: relative;
+    border:none;
 }
 #search-pro {
-    width: 650px;
+    width: 95%;
     height: 40px;
     border: none;
     border-radius: 20px;
-    background-color: #ecececc2;
+    background-color: #ececec;
     color: black;
-    padding-left: 20px;
+    padding-left: 40px;
     display: block;
+    outline: none;
+}
+#search-pro:focus {
+    border-radius: 20px;
+    border: 2px solid rgb(123, 123, 196);
+}
+#loupe {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    opacity: 0.8;
+}
+#camera {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    opacity: 0.8;
 }
 #header-list2 {
     display: flex;
@@ -213,31 +244,34 @@ ul {
     height: 24px;
     margin: 0 20px 0 10px;
 }
-
+#header-list2 li:nth-child(5){
+    display: none;
+}
 
 
 /*main*/
 .main{
-    max-width: max-content;
-    height: 9000px;
+    max-width: 100%;
+    height: 9800px;
 }
 /*section1*/
 .sec1 {
-    width: 1300px;
-    height: 850px;
-    margin-left: 100px
+    width: 90%;
+    height: 950px;
+    margin-left: 100px;
+    overflow: hidden;
 }
 #txt1 {
     width: 61%;
     height: 100px;
-    padding: 10px;
+    padding-bottom: 20px;
     padding-left: 80px;
     margin-bottom: 20px;
 }
 #sec1-d1 {
     display: inline-block;
     width: 45%;
-    height: 650px;
+    height: 700px;
     margin-left: 60px;
 }
 #sec1-d1 img {
@@ -248,7 +282,6 @@ ul {
     display: inline-block;
     width: 45%;
     height: 650px;
-    margin-left: 30px;
 }
 #sec1-d2 img {
     max-width: 100%;
@@ -282,7 +315,7 @@ ul {
 
 /*section2*/
 .sec2 {
-    max-width: 1350px;
+    width: 90%;
     height: 800px;
     margin-left: 100px;
     position: relative;
@@ -292,7 +325,7 @@ ul {
     padding-left: 60px;
     margin-bottom: 20px;
 }
-.btn-left, .r-btn-left {
+.btn-left {
     width: 50px;
     height: 50px;
     background: url("images/previous.svg");
@@ -300,15 +333,15 @@ ul {
     bottom: 350px;
     left: 0;
 } 
-.btn-right, .r-btn-right {
+.btn-right {
     width: 50px;
     height: 50px;
     background: url("images/003-next.svg");
     position: absolute;
     bottom: 350px;
-    right: 30px;
+    right: 0px;
 }
-.btn-left:hover, .r-btn-left:hover,.btn-right:hover, .r-btn-right:hover {
+.btn-left:hover, .r-btn-left:hover,.btn-right:hover, .r-btn-right:hover, .s-btn-left:hover, .s-btn-right:hover {
     opacity: 0.8;
 }
 .list {
@@ -316,7 +349,7 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 700px;
-    max-width: 1200px;
+    width: 90%;
     scroll-behavior: smooth;
 }
 /*list의 스크롤 디자인*/
@@ -334,11 +367,11 @@ ul {
 .list li {
     display: inline-block;
     width: 390px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .sec2-content{
     width: 390px;
-    height: 680px;
+    height: 650px;
     margin-right: 15px;
     position: relative;
 }
@@ -404,7 +437,7 @@ ul {
 }
 
 #delivery-problem {
-    max-width: 1200px;
+    max-width: 82%;
     height: 150px;
     background-color: #e7e6e6;
     margin: 30px 0 40px 160px;
@@ -419,7 +452,7 @@ ul {
 
 /*section3*/
 .sec3 {
-    max-width: 1350px;
+    max-width: 90%;
     height: 700px;
     margin-left: 100px;
     position: relative;
@@ -434,7 +467,7 @@ ul {
     white-space:nowrap;
     margin-left: 60px;
     height: 560px;
-    max-width: 1200px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -451,9 +484,24 @@ ul {
 .recommend::-webkit-scrollbar-track {
     background-color: #f1f1f1;
 }
+.r-btn-left {
+    width: 50px;
+    height: 50px;
+    background: url("images/previous.svg");
+    position: absolute;
+    bottom: 350px;
+    left: 0;
+} 
+.r-btn-right{
+    width: 50px;
+    height: 50px;
+    background: url("images/003-next.svg");
+    position: absolute;
+    bottom: 350px;
+    right: 0px;
+}
 .recommend li {
-    padding-right: 20px;
-    
+    padding-right: 20px; 
     position: relative;
 }
 .item {
@@ -476,14 +524,14 @@ ul {
     padding-bottom: 5px;
 }
 .recommend li button {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     bottom: 50px;
     right: 60px;
     border: none;
     background: url("./images/003-add-to-cart.svg") center no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: none;
 }
 
@@ -516,8 +564,8 @@ ul {
 
 /*section4*/
 .sec4 {
-    width: 1350px;
-    height: 1000px;
+    width: 100%;
+    height: 1200px;
     margin-top: 50px;
 }
 .sec4 h2 {
@@ -538,92 +586,80 @@ ul {
 
 }
 .new-product {
-    max-width: 1200px;
+    width: 92%;
     height: 900px;
     display: inline-block;
     margin-left: 60px;
     position: relative;
 }
 #sec4-img1, #sec4-img2{
-    width: 48%;
-    height: 800px;
+    width: 47%;
+    height: auto;
     margin-right: 20px;
     margin-top: 20px;
 }
-#new-tag1 {
+.tag {
+    border : 1px solid #ccc;
+    position: absolute;
+    background-color: white;   
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 50;
+    display: none;
+}
+.tag span {
+    color: rgb(187, 45, 45);
+}
+.tag:nth-child(3) {
+    color: #262626;
+}
+.tag-btn {
+    background-color: white;
     width: 20px;
     height: 20px;
     border: 1px solid #ccc;
     border-radius: 45px;
     position: absolute;
     z-index: 50;
+}
+#new-tag1 {
     bottom: 350px;
     left: 250px;
-    background-color: white;
 }
 #new-tag1-s {
     width: 120px;
     height: 100px;
-    border : 1px solid #ccc;
-    position: absolute;
-    z-index: 50;
     bottom : 310px;
-    left: 280px;
-    background-color: white;   
-    padding: 10px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    display: none;
-}
-#new-tag1-s span, #new-tag2-s span {
-    font-weight: bold;
-    color: rgb(187, 45, 45);
-}
-#new-tag1-s:nth-child(3), #new-tag2-s:nth-child(3){
-    color: #262626;
+    left: 280px;   
 }
 #new-tag2 {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #ccc;
-    border-radius: 45px;
-    position: absolute;
-    z-index: 50;
-    top: 200px;
-    right: 300px;
-    background-color: white;
+    top: 140px;
+    right: 320px;
 }
 #new-tag2-s {
     width: 120px;
     height: 100px;
-    border : 1px solid #ccc;
-    position: absolute;
-    z-index: 50;
-    top : 160px;
-    right: 160px;
-    background-color: white;   
-    padding: 10px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    display: none;
+    top : 120px;
+    right: 170px;
 }
 
 /*section5*/
 .sec5 {
-    width: 1350px;
-    height: 1000px;
+    width: 100%;
+    height: 1200px;
 }
 .sec5 h2 {
     margin-bottom: 20px;
 }
-.sec5 p {
-    font-size: 0.9rem;
-    width:42%;
+#sec5-p {
+    font-size: 0.8rem;
+    width:36%;
     display: inline-block;
     margin-left: 60px;
 }
 .sec5 button {
-    width: 120px;
+    width: max-content;
     height: 40px;
     text-align: center;
     border: 1px solid #cccccc;
@@ -633,34 +669,114 @@ ul {
     background-color: rgba(255, 255, 255, 0.932);
     float: right;
     margin-right: 120px;
+    padding: 0 10px 0 10px;
 }
 .refresh-product {
-    max-width: 1200px;
+    max-width: 92%;
     height: 900px;
     display: inline-block;
     margin-left: 60px;
+    position: relative;
+}
+#kid-tag1 {
+    top: 220px;
+    left: 250px;
+}
+#kid-tag1-s {
+    width: 150px;
+    height: 110px;
+    top : 170px;
+    left: 280px;
+}
+#kid-tag2 {
+    top: 500px;
+    left: 250px;
+}
+#kid-tag2-s {
+    width: 160px;
+    height: 110px;
+    top : 450px;
+    left: 280px;
+}
+#kid-tag3 {
+    bottom: 150px;
+    left: 450px;
+}
+#kid-tag3-s {
+    width: 160px;
+    height: 110px;
+    bottom : 100px;
+    left: 270px;
+}
+#kid-tag4 {
+    top: 120px;
+    right: 350px;
+}
+#kid-tag4-s {
+    width: 160px;
+    height: 90px;
+    top : 80px;
+    right: 380px;
+}
+#kid-tag5 {
+    top: 350px;
+    right: 380px;
+}
+#kid-tag5-s {
+    width: 160px;
+    height: 100px;
+    top : 320px;
+    right: 410px;
+}
+#kid-tag6 {
+    top: 280px;
+    right: 180px;
+}
+#kid-tag6-s {
+    width: 160px;
+    height: 120px;
+    top : 320px;
+    right: 90px;
 }
 #sec5-img1, #sec5-img2{
-    width: 48%;
-    height: 800px;
+    max-width: 47%;
+    height: auto;
     margin-right: 20px;
     margin-top: 20px;
 }
 /*section6*/
 .sec6 {
-    max-width: 1350px;
+    width: 100%;
     height: 1000px;
     margin-top: 50px;
+    position: relative;
+}
+.s-btn-left {
+    width: 50px;
+    height: 50px;
+    background: url("images/previous.svg");
+    position: absolute;
+    top: 180px;
+    left: 0;
+} 
+.s-btn-right{
+    width: 50px;
+    height: 50px;
+    background: url("images/003-next.svg");
+    position: absolute;
+    top: 180px;
+    right: 30px;
 }
 .sec6 h2 {
     margin-bottom: 20px;
 }
 .solution {
-    width: 1200px;
+    width: 90%;
     height: 350px;
     overflow-x: scroll;
     display: flex;
     margin-left: 60px;
+    scroll-behavior: smooth;
 }
 .solution::-webkit-scrollbar {
     height: 4px;
@@ -757,24 +873,24 @@ ul {
     background: url("https://www.ikea.com/images/ivar-696cb2a6ba4bbc83c5e8226a2bef560c.jpg?f=xxs") no-repeat center;   
 }
 .img6 button {
-    left: 30px;
+    left: 50px;
 }
 .img7{
     background: url("https://www.ikea.com/images/gamlehult-ce886cf9fddd6a7b373a63db87f330ec.jpg?f=xxs") no-repeat center;   
 }
 .img7 button {
-    left: 30px;
+    left: 50px;
 }
 .img8{
     background: url("https://www.ikea.com/images/ikea-365-365-huvudroll-5ad685907ab46dec5bbf0b2820dd4192.jpg?f=xxs") no-repeat center;   
 }
 .img8 button {
-    left: 30px;
+    left: 50px;
 }
 
 /*section7*/
 .sec7 {
-    width: 1350px;
+    width: 100%;
     height: 500px;
     margin-top: 50px;
     margin-left: 20px;
@@ -808,7 +924,7 @@ ul {
 }
 /*section8*/
 .sec8 {
-    width: 1200px;
+    width: 92%;
     height: 150px;
     background-color: #e7e6e6;
     margin-left: 60px;
@@ -838,7 +954,7 @@ ul {
 
 /*section9*/
 .sec9 {
-    max-width: 1350px;
+    width: 92%;
     height: auto;
     margin-top: 20px;
 }
@@ -872,7 +988,7 @@ ul {
     "item7 item8 item9"
     "item10 item11 item12";
     grid-template-columns:repeat(3, 1fr);
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin-left: 60px;
     margin-top: 10px;
@@ -880,21 +996,21 @@ ul {
 }
 #sec9-item1 {
     grid-area: item1;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/96c2f4720cb69a1/original/PH158522-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item2 {
     grid-area: item2;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/5425b1c6a40dda8/original/PH158524-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item3 {
     grid-area: item3;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/720bdc2f4e8db951/original/PH161816-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
@@ -902,63 +1018,63 @@ ul {
 }
 #sec9-item4 {
     grid-area: item4;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/5485848de1d93a3/original/PH165568-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item5 {
     grid-area: item5;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/3b81f45cb3162a8d/original/PH164209-crop002.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item6 {
     grid-area: item6;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/314fd312c5868abc/original/PH164210-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item7 {
     grid-area: item7;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/23a6f4b747e029f0/original/PH164465-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item8 {
     grid-area: item8;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/597c1848046a57f/original/PH157396-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item9 {
     grid-area: item9;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/5d323755d0092c96/original/PH151174-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item10 {
     grid-area: item10;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/4ae9bf3115fb075b/original/PH157374-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item11 {
     grid-area: item11;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/1c60f7fa0943ea8f/original/PH153047-crop004.jpg?f=m") no-repeat center;
     background-size: contain;
 }
 #sec9-item12 {
     grid-area: item12;
-    max-width: 400px;
+    width: 100%;
     height: 600px;
     background: url("https://www.ikea.com/ext/ingkadam/m/1bddfaf55ad21a3f/original/PH169109-crop001.jpg?f=m") no-repeat center;
     background-size: contain;
@@ -974,7 +1090,8 @@ ul {
     border-radius: 30px;
     font-size: 0.8rem;
     border: none;
-    margin-left: 40%;
+    margin-left: 50%;
+    margin-top: 20px;
 }
 #more-btn:hover{
     opacity: 0.8;
@@ -982,25 +1099,25 @@ ul {
 
 /*section10*/
 .sec10 {
-    max-width: 1350px;
+    width: 92%;
     height: 800px;
     margin-top: 50px;
 }
 .sec10-all {
-    width: 1200px;
+    width: 100%;
     height: 700px;
     display: flex;
     flex-direction: row;
     margin-left: 60px;
 }
 .sec10-d1, .sec10-d2, .sec10-d3 {
-    width: 400px;
+    width: 100%;
     height: 600px;
     background-color: #f1f1f1;
     margin-right: 10px;
 }
 .sec10-all img{
-    width: 400px;
+    width: 100%;
     height: 400px;
     margin-bottom: 10px;
 }
@@ -1021,7 +1138,7 @@ ul {
 }
 /*footer*/
 .footer {
-    width: 1600px;
+    width: 100%;
     height: 700px;
     background-color: #f1f1f1;
     display: flex;
@@ -1051,12 +1168,12 @@ ul {
       transition: 0.3s ease-out;
   }
 .links {
-    width: 1600px;
+    width: 100%;
     height: 500px;
     position: relative;
-    border-bottom:1px solid rgb(199, 199, 199);
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    border-bottom: 1px solid #ccc; 
 }
 
 .join-fam {
@@ -1118,7 +1235,7 @@ ul {
 .linkurl img {
     width: 20px;
     height: 20px;
-    border: 1px solid #cccccc;
+    border: none;
 }
 .linkurl img:hover{
     border: #616161;
