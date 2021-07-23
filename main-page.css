@@ -1,6 +1,6 @@
 @media screen and (max-width : 1200px) {
-    body {
-        overflow-x: auto;
+    .main {
+        height: 7500px;
     }
     .header {
         width: 820px;
@@ -29,6 +29,10 @@
         width: 90%;
         height: 680px;
     }
+    .btn-right {
+        right: -30px;
+    }
+    
     .list li, .sec2-content {
         width: 300px;
         height: 600px;
@@ -51,8 +55,12 @@
     .sec3 {
         margin-left: 30px;
     }
+    
     .recommend {
-         height: 500px;
+         height: 550px;
+    }
+    .r-btn-right{
+        right: -30px;
     }
     .item {
         width: 250px;
@@ -102,60 +110,350 @@
     }
     #kid-tag1 {
         top: 150px;
-        left: 200px;
+        left: 150px;
     }
     #kid-tag1-s {
         top : 100px;
-        left: 230px;
+        left: 180px;
     }
     #kid-tag2 {
+        top: 320px;
+        left: 150px;
+    }
+    #kid-tag2-s {
+        top: 270px;
+        left: 180px;
+    }
+    #kid-tag3 {
         top: 500px;
         left: 250px;
     }
-    #kid-tag2-s {
-        width: 160px;
-        height: 110px;
-        top : 450px;
+    #kid-tag3-s {
+        top : 460px;
         left: 280px;
     }
-    #kid-tag3 {
-        bottom: 150px;
-        left: 450px;
-    }
-    #kid-tag3-s {
-        width: 160px;
-        height: 110px;
-        bottom : 100px;
-        left: 270px;
-    }
     #kid-tag4 {
-        top: 120px;
-        right: 350px;
+        top: 180px;
+        right: 320px;
     }
     #kid-tag4-s {
-        width: 160px;
-        height: 90px;
-        top : 80px;
-        right: 380px;
+        top : 140px;
+        right: 150px;
     }
     #kid-tag5 {
-        top: 350px;
-        right: 380px;
+        top: 400px;
+        right: 280px;
     }
     #kid-tag5-s {
-        width: 160px;
-        height: 100px;
-        top : 320px;
-        right: 410px;
+        top : 370px;
+        right: 110px;
     }
     #kid-tag6 {
-        top: 280px;
-        right: 180px;
+        top: 150px;
+        right: 100px;
     }
     #kid-tag6-s {
-        width: 160px;
-        height: 120px;
-        top : 320px;
-        right: 90px;
+        top : 180px;
+        right: 60px;
     }
+    .sec6 {
+        height: 300px;
+    }
+    .s-btn-right {
+        right: -30px;
+    }
+    .sec9-btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #sec9-item1, #sec9-item2, #sec9-item3, #sec9-item4, #sec9-item5, #sec9-item6, #sec9-item7, #sec9-item8, #sec9-item9, #sec9-item10, #sec9-item11, #sec9-item12 {
+        height: 400px;
+    }
+    .sec10 {
+        width: 100%;
+        height: 300px;
+    }
+    .linkurl, .change-country {
+        bottom: 20px;
+    }
+    .links-inner {
+        width: 600px;
+    }
+    #scrollTopTab {
+        display: block;
+    }
+    
+    
+}
+@media screen and (max-width: 750px) {
+    .hamburger-menu-wrap {
+        width: 600px;
+        left: -600px;
+    }
+    #header-bar {
+        height: 50px;
+    }
+    #header-bar p:nth-child(1),#header-bar p:nth-child(2){
+        display: none;
+    }
+    #header-bar p:nth-child(3) {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+    .main-nav {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 10px;
+        height: 100px;
+    }
+    #header-list1 {
+        display: none;
+    }
+    #logo {
+        order: 1;
+        width: max-content;
+    }
+    #header-list2 {
+        order: 1;
+        margin-left: 100px;
+    }
+    #search {
+        order: 2;
+        width: 100%;
+    }
+    #search-pro {
+        height: 45px;
+    }
+    .main {
+        height: 9000px;
+    }
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+    }
+    #txt1 {
+        margin-top: 30px;
+        width: 90%;
+        height: auto;
+        padding-left: 10px;
+    }
+    #txt1 h2 {
+        font-size: 1rem;
+    }
+    #txt1 p {
+        font-size: 0.85rem;
+    }
+    #sec1-d1, #sec1-d2 {
+        width: 90%;
+        height: max-content;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    #sec1-d1 img, #sec1-d2 img {
+        width: 90%;
+    }
+    #go-sale, #more-info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .sec2 {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .sec2 h2 {
+        font-size: 1rem;
+        padding-left: 30px;
+    }
+   .list {
+    margin-left: 50px;
+    }
+    .list li h2 {
+        font-size: 1.1rem;
+    }
+    .list li p {
+        font-size: 0.9rem;
+    }
+    #delivery-problem {
+        margin-left: 50px;
+        width: 100%;
+    }
+    #delivery-problem h1 {
+        font-size: 1rem;
+    }
+    .sec3 {
+        margin-left: 30px;
+        width: 90%;
+        height: 600px;
+        padding-top: 20px;
+    }
+    .sec3 h2 {
+        font-size: 1.1rem;
+    }
+    .recommend {
+        margin-left: 20px;
+        height: 450px;
+        margin-bottom: 150px;
+    }
+    .item {
+        width: 200px;
+        height: 430px;
+    }
+    .item img {
+        width: 200px;
+        height: 200px;
+    }
+    .sec4, .sec5 {
+        margin-left: 20px;
+        margin-top: 50px;
+        height: 1400px;
+    }
+    .sec4 h2, .sec5 h2 {
+        display: block;
+    }
+    .sec4 button, .sec5 button {
+        display: none;
+    }
+    .new-product {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 10px;
+        height: 1300px;
+        position: relative;
+    }
+    .refresh-product {
+        max-width: 90%;
+        margin-left: 10px;
+        height: 1300px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .tag-btn, .tag {
+        display: none;
+    }
+    #sec4-img1, #sec4-img2 {
+        width: 100%;
+        height: auto;
+    }
+    #sec5-img1, #sec5-img2 {
+        width: 100%;
+        height: max-content;
+    }
+    .sec6 {
+        margin-left: 0px;
+    }
+    .solution {
+        margin-left: 50px;
+    }
+    .sec7 {
+        margin-left: 10px;
+    }
+    .sec8 {
+        margin-left: 30px;
+        height: 350px;
+    }
+    #d-service, #a-service {
+        width: 100%;
+        height: 50%;
+        display: block;
+        text-align: left;
+        margin-left: 40px;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    .sec9 {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+    .table1, .table2 {
+        margin-left: 30px;
+    }
+    #more-btn{
+        margin-left: 35%; 
+    }
+    .sec10 {
+        width: 100%;
+    }
+    .sec10-all {
+        margin-left: 0;
+    }
+    .footer {
+        height: 1000px;
+    }
+    .links {
+        flex-direction: column;
+        height: max-content;
+    }
+    .join-fam {
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 30px;
+    }
+    .links-inner {
+        display: block;
+    }
+    .footer ul {
+        width: 100%;
+    }
+    .footer ul h3, .footer ul span {
+        display: inline-block;
+    }
+    .footer ul span {
+        float: right;
+    }
+    .sub {
+        margin-top: 20px;
+        display: none;
+        
+    }
+    .li-title {
+        margin-top: 20px;
+    }
+    .sub li {
+        padding-top:  20px;
+        cursor: pointer;
+    }
+    .customer-q, .shopping, .service, .story {
+        border-bottom: 1px solid gray;
+    }
+    .linkurl {
+        width: 100%;
+        display: block;
+        bottom: 50px;
+        margin-left: 30px;
+    }
+    .change-country {
+        width: 100%;
+        display: block;
+        bottom: 0px;
+        margin-left: 100px;
+        padding-left: 70px;
+    }
+    #ikea-copy {
+        float: left;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    #ikea-policy {
+        width: 600px;
+        display: block;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    #ikea-info {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
 }

@@ -7,7 +7,9 @@
     <title>38기 진선희(이케아)</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main-page.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-animate-css-rotate-scale.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
@@ -32,7 +34,7 @@
                     </ul>
                 </div>
                 <div id="search">
-                    <input type="search" id="search-pro" placeholder="검색어를 입력하세요.">
+                    <input type="search" id="search-pro" placeholder="검색어 입력">
                     <img id="loupe" src="images/loupe.svg" alt="">
                     <img id="camera" src="images/camera.svg" alt="">
                 </div>
@@ -166,12 +168,13 @@
                     </div>
                 </article>
                 <section class="sec3">
-                <h2>추천제품</h2>
+                <h2>추천 제품</h2>
                 <div class="r-btn-left" onclick="mouseScrollLeft2()"></div>
                 <div class="r-btn-right" onclick="mouseScrollRight2()"></div>
                 <ul class="recommend">
                     <li id="item1">
                         <div class="item">
+                            <p class="heart-icon heart1"><i class="far fa-heart"></i></p>
                             <img id="item1-img" src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-4-drawers-grey-green__0729044_pe738503_s5.jpg?f=s">
                             <div class="item-info">
                                 <span>더 낮은 새로운 가격</span>
@@ -185,6 +188,7 @@
                     </li>
                     <li id="item2">
                         <div class="item">
+                            <p class="heart-icon heart2"><i class="far fa-heart"></i></p>
                             <img id="item2-img" src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-4-drawers-red__0729045_pe738504_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 <span>더 낮은 새로운 가격</span>
@@ -198,6 +202,7 @@
                     </li>
                     <li id="item3">
                         <div class="item">
+                            <p class="heart-icon heart3"><i class="far fa-heart"></i></p>
                             <img id="item3-img" src="https://www.ikea.com/kr/ko/images/products/nikkeby-chest-of-2-drawers-grey-green__0729042_pe738505_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 <span>더 낮은 새로운 가격</span>
@@ -211,6 +216,7 @@
                     </li>
                     <li id="item4">
                         <div class="item">
+                            <p class="heart-icon heart4"><i class="far fa-heart"></i></p>
                             <img id="item4-img" src="https://www.ikea.com/kr/ko/images/products/ikea-ps-cabinet-white__0644741_pe702929_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 &nbsp;
@@ -223,6 +229,7 @@
                     </li>
                     <li id="item5">
                         <div class="item">
+                            <p class="heart-icon heart5"><i class="far fa-heart"></i></p>
                             <img id="item5-img" src="https://www.ikea.com/kr/ko/images/products/baggebo-tv-bench-metal-white__1023961_pe833372_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 &nbsp;
@@ -235,6 +242,7 @@
                     </li>
                     <li id="item6">
                         <div class="item">
+                            <p class="heart-icon heart6"><i class="far fa-heart"></i></p>
                             <img id="item6-img" src="https://www.ikea.com/kr/ko/images/products/lixhult-cabinet-metal-grey__0644746_pe702934_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 <span>NEW</span>
@@ -247,6 +255,7 @@
                     </li>
                     <li id="item7">
                         <div class="item">
+                            <p class="heart-icon heart7"><i class="far fa-heart"></i></p>
                             <img id="item7-img" src="https://www.ikea.com/kr/ko/images/products/nikkeby-clothes-rack-grey-green__0727606_pe735759_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 <span>더 낮은 새로운 가격</span>
@@ -260,6 +269,7 @@
                     </li>
                     <li id="item8">
                         <div class="item">
+                            <p class="heart-icon heart8"><i class="far fa-heart"></i></p>
                             <img id="item8-img" src="https://www.ikea.com/kr/ko/images/products/kolbjoern-cabinet-in-outdoor-green__0762731_pe752182_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 &nbsp;
@@ -272,6 +282,7 @@
                     </li>
                     <li id="item9">
                         <div class="item">
+                            <p class="heart-icon heart9"><i class="far fa-heart"></i></p>
                             <img id="item9-img" src="https://www.ikea.com/kr/ko/images/products/nikkeby-clothes-rack-grey-green__0727608_pe735761_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 &nbsp;
@@ -284,6 +295,7 @@
                     </li>
                     <li id="item10">
                         <div class="item">
+                            <p class="heart-icon heart10"><i class="far fa-heart"></i></p>
                             <img id="item10-img" src="https://www.ikea.com/kr/ko/images/products/fjaellbo-tv-bench-black__0473390_pe614545_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 &nbsp;
@@ -296,6 +308,7 @@
                     </li>
                     <li id="item11">
                         <div class="item">
+                            <p class="heart-icon heart11"><i class="far fa-heart"></i></p>
                             <img id="item11-img" src="https://www.ikea.com/kr/ko/images/products/lennart-drawer-unit-white__0395412_pe564513_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 &nbsp;
@@ -308,6 +321,7 @@
                     </li>
                     <li id="item12">
                         <div class="item">
+                            <p class="heart-icon heart12"><i class="far fa-heart"></i></p>
                             <img id="item12-img" src="https://www.ikea.com/kr/ko/images/products/fjaellbo-shelving-unit-black__0473389_pe614540_s5.jpg?f=s" alt="">
                             <div class="item-info">
                                 <span>더 낮은 새로운 가격</span>
@@ -348,7 +362,7 @@
                 <p id="sec5-p">사랑스러운 아이의 달콤한 꿈을 위해 귀여운 고양이 친구를 초대해 보세요. 부드러운 느낌의 침대 텍스타일은 아이가 깊은 잠을 잘 수 있도록 도와줍니다.</p>
                 <button>새로운 어린이 제품 보러가기</button>
                 <div class="refresh-product">
-                    <img id="sec5-img1" alt="" src="https://www.ikea.com/ext/ingkadam/m/40fd319e6cc40b70/original/PH177659.jpg?f=xl">
+                    <img id="sec4-img1" alt="" src="https://www.ikea.com/ext/ingkadam/m/40fd319e6cc40b70/original/PH177659.jpg?f=xl">
                     <div id="kid-tag1" class="tag-btn"></div>
                     <div id="kid-tag1-s" class="tag">
                         <span>NEW</span>
@@ -370,7 +384,7 @@
                         <p>이불커버+베개커버</p>
                         <p>\17,900</p>
                     </div>
-                    <img id="sec5-img2" alt="" src="https://www.ikea.com/ext/ingkadam/m/4cc8951925fc51cf/original/PH177663.jpg?f=xl">
+                    <img id="sec4-img2" alt="" src="https://www.ikea.com/ext/ingkadam/m/4cc8951925fc51cf/original/PH177663.jpg?f=xl">
                     <div id="kid-tag4" class="tag-btn"></div>
                     <div id="kid-tag4-s" class="tag">
                         <P>KÄPPHÄST 솁헤스트</P>
@@ -484,21 +498,52 @@
                     <button>현관</button>
                     <button>소품</button>
                 </div>
-                <div class="sec9-container">
-                    <div id="sec9-item1"></div>
-                    <div id="sec9-item2" ></div>
-                    <div id="sec9-item3"></div>
-                    <div id="sec9-item4"></div>
-                    <div id="sec9-item5"></div>
-                    <div id="sec9-item6"></div>
-                    <div id="sec9-item7"></div>
-                    <div id="sec9-item8"></div>
-                    <div id="sec9-item9"></div>
-                    <div id="sec9-item10"></div>
-                    <div id="sec9-item11"></div>
-                    <div id="sec9-item12"></div>
-                </div>
+                <table class="table1">
+                    <tr>
+                        <td><img src="https://www.ikea.com/ext/ingkadam/m/597c1848046a57f/original/PH157396-crop001.jpg?f=m" alt=""></td>
+                        <td><img src="https://www.ikea.com/ext/ingkadam/m/720bdc2f4e8db951/original/PH161816-crop001.jpg?f=m" alt=""></td>
+                        <td><img src="https://www.ikea.com/ext/ingkadam/m/65e8683315d70e87/original/PH172189.jpg?f=m" alt=""></td>
+                    </tr>
+                    <tr>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/3eebc74819e182ed/original/PH164322-crop001.jpg?f=m" alt=""></td>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/31b3d64e1fd9fb68/original/PH157536-crop001.jpg?f=m" alt=""></td>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/1bddfaf55ad21a3f/original/PH169109-crop001.jpg?f=m" alt=""></td>
+                    </tr>
+                    <tr>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/11a23888ef5d86ee/original/PH168545-crop001.jpg?f=m" alt=""></td>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/c9f20333c2dc4ee/original/PH159229-crop001.jpg?f=m" alt=""></td>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/23a6f4b747e029f0/original/PH164465-crop001.jpg?f=m" alt=""></td>
+                    </tr>
+                    <tr>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/23bf0a21a4718c18/original/PH158532-crop001.jpg?f=m" alt=""></td>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/314fd312c5868abc/original/PH164210-crop001.jpg?f=m" alt=""></td>
+                     <td><img src="https://www.ikea.com/ext/ingkadam/m/2f1666b23c971b0/original/PH169113-crop001.jpg?f=m" alt=""></td>
+                    </tr>
+                </table>
                 <button id="more-btn">12개 더 보기</button>
+               <table class="table2">
+                   <tr>
+                       <td><img src="https://www.ikea.com/ext/ingkadam/m/6369d45bb3fa2db0/original/PH159536-crop001.jpg?f=s" alt=""></td>
+                       <td><img src="https://www.ikea.com/ext/ingkadam/m/25d31ad832ccf723/original/PH174170.jpg?f=s" alt=""></td>
+                       <td><img src="https://www.ikea.com/ext/ingkadam/m/147325d7e6d1b796/original/PH157616-crop001.jpg?f=s" alt=""></td>
+                   </tr>
+                   <tr>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/64c4885265d49f4b/original/PH159226-crop001.jpg?f=s" alt=""></td>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/72a753078ace0d70/original/PH159285-crop001.jpg?f=s" alt=""></td>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/44e7de61db3eef85/original/PH159281-crop001.jpg?f=s" alt=""></td>
+                   </tr>
+                   <tr>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/46e3818174bc022/original/PH168535-crop001.jpg?f=s" alt=""></td>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/6efe22772fac8084/original/PH159558-crop002.jpg?f=s" alt=""></td>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/4c2a58f77a0b1d29/original/PH161725-crop001.jpg?f=s" alt=""></td>
+                   </tr>
+                   <tr>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/5d323755d0092c96/original/PH151174-crop001.jpg?f=s" alt=""></td>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/96c2f4720cb69a1/original/PH158522-crop001.jpg?f=m" alt=""></td>
+                    <td><img src="https://www.ikea.com/ext/ingkadam/m/d215389f689d495/original/PH174029.jpg?f=s" alt=""></td>
+                   </tr>
+               </table>
+                
             </section>  
             <section class="sec10">
                 <div class="sec10-all">
@@ -521,9 +566,10 @@
             </section>
         </main>
     
+        <div onclick="topFunction()" id="scrollTopTab">맨 위로 이동</div>
     <footer class="footer">
         <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
-            <img src="images/001-up-arrow.svg" width="25px" height="25px"> 맨 위로 이동</div>
+            <i class="fas fa-arrow-up"></i>  맨 위로 이동</div>
         <div class="links">
                 <div class="join-fam">
                     <h2>IKEA Family</h2>
@@ -531,48 +577,64 @@
                     <button id="join-family">IKEA Family 가입하기</button>
                 </div> 
                 <div class="links-inner">
-                    <ul>
-                        <li><h3>고객문의</h3></li>
-                        <li><a href="#">고객지원</a></li>
-                        <li><a href="#">자주 묻는 질문</a></li>
-                        <li><a href="#">문의하기</a></li>
-                        <li><a href="#">배송조회</a></li>
-                        <li><a href="#">교환환불</a></li>
-                        <li><a href="#">품질보증</a></li>
-                        <li><a href="#">제품리콜</a></li>
-                        <li><a href="#">제품 구매 가이드</a></li>
-                        <li><a href="#">피드백</a></li>
+                    <ul id="customer-q">
+                        <li class="li-title"><h3>고객문의</h3><span><i class="fas fa-chevron-down"></i></span></li>
+                        <ul class="customer-q sub">
+                            <li><a href="#">고객지원</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">배송조회</a></li>
+                            <li><a href="#">교환환불</a></li>
+                            <li><a href="#">품질보증</a></li>
+                            <li><a href="#">제품리콜</a></li>
+                            <li><a href="#">제품 구매 가이드</a></li>
+                            <li><a href="#">피드백</a></li>
+                        </ul>
                     </ul>
-                    <ul>
-                        <li><h3>쇼핑하기</h3></li>
-                        <li><a href="#">쇼핑하기</a></li>
-                        <li><a href="#">전화 주문</a></li>
-                        <li><a href="#">IKEA for Business</a></li>
-                        <li><a href="#">셀프 플래닝</a></li>
-                        <li><a href="#">IKEA 모바일 웹</a></li>
-                        <li><a href="#">IKEA 카탈로그</a></li>
-                        <li><a href="#">제품 사용 팁/가이드</a></li>
-                        <li><a href="#">결제 옵션</a></li>
-                        <li><a href="#">기프트 카드</a></li>
+                    <ul id="shopping">
+                        <li class="li-title">
+                            <h3>쇼핑하기</h3>
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </li>
+                        <ul class="shopping sub">
+                            <li><a href="#">전화 주문</a></li>
+                            <li><a href="#">IKEA for Business</a></li>
+                            <li><a href="#">셀프 플래닝</a></li>
+                            <li><a href="#">IKEA 모바일 웹</a></li>
+                            <li><a href="#">IKEA 카탈로그</a></li>
+                            <li><a href="#">제품 사용 팁/가이드</a></li>
+                            <li><a href="#">결제 옵션</a></li>
+                            <li><a href="#">기프트 카드</a></li>
+                        </ul>
                     </ul>
-                    <ul>
-                        <li><h3>서비스</h3></li>
-                        <li><a href="#">IKEA 서비스</a></li>
-                        <li><a href="#">배송 서비스</a></li>
-                        <li><a href="#">조립 서비스</a></li>
-                        <li><a href="#">주방 서비스</a></li>
-                        <li><a href="#">욕실 서비스</a></li>
-                        <li><a href="#">홈퍼니싱 플래닝 서비스</a></li>
-                        <li><a href="#">인테리어 디자인 서비스</a></li>
-                        <li><a href="#">바이백 서비스</a></li>
+                    <ul id="service">
+                        <li class="li-title">
+                            <h3>서비스</h3>
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </li>
+                        <ul class="service sub">
+                            <li><a href="#">IKEA 서비스</a></li>
+                            <li><a href="#">배송 서비스</a></li>
+                            <li><a href="#">조립 서비스</a></li>
+                            <li><a href="#">주방 서비스</a></li>
+                            <li><a href="#">욕실 서비스</a></li>
+                            <li><a href="#">홈퍼니싱 플래닝 서비스</a></li>
+                            <li><a href="#">인테리어 디자인 서비스</a></li>
+                            <li><a href="#">바이백 서비스</a></li>
+                        </ul>
                     </ul>
-                    <ul>
-                        <li><h3>IKEA 이야기</h3></li>
-                        <li><a href="#">기업 소개</a></li>
-                        <li><a href="#">데모크래틱 디자인</a></li>
-                        <li><a href="#">지속가능한 생활</a></li>
-                        <li><a href="#">뉴스</a></li>
-                        <li><a href="#">채용정보</a></li>
+                    <ul id="story">
+                        <li class="li-title">
+                            <h3>IKEA 이야기</h3>
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </li>
+                        <ul class="story sub">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">데모크래틱 디자인</a></li>
+                            <li><a href="#">지속가능한 생활</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">채용정보</a></li>
+                        </ul>
                     </ul>
                 </div>
                 <div class="linkurl">
